@@ -1,7 +1,9 @@
 # Kuzushiji-MNIST
 Repository for Kuzushiji_MNIST, Kuzushiji49, and Kuzushiji_Kanji
 
-![Image showing examples of each class of Kuzushiji MNIST](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji_mnist.png)
+The 10 classes of Kuzushiji-MNIST, with the first column showing each character's modern hiragana counterpart.
+
+![Image showing examples of each class of Kuzushiji MNIST](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji-mnist-30example-labelled.png)
 
 ## Get the data
 ### Kuzushiji-MNIST
