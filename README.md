@@ -12,10 +12,10 @@ Kuzushiji-MNIST contains 70,000 28x28 grayscale images spanning 10 classes (one 
 
 | File            | Examples | Download (MNIST format)    | Download (NumPy format)      |
 |-----------------|--------------------|----------------------------|------------------------------|
-| Training images | 60,000             | train-images-idx3-ubyte.gz | [kuzushiji10-train-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-train-imgs.npz) (16MB)   |
-| Training labels | 60,000             | train-labels-idx1-ubyte.gz | [kuzushiji10-train-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-train-imgs.npz)   |
-| Testing images  | 10,000             | t10k-images-idx3-ubyte.gz  | [kuzushiji10-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-imgs.npz) (3MB)   |
-| Testing labels  | 10,000             | t10k-labels-idx1-ubyte.gz  | [kuzushiji10-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-imgs.npz)  |
+| Training images | 60,000             | [train-images-idx3-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/train-images-idx3-ubyte.gz) (17MB) | [kuzushiji10-train-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-train-imgs.npz) (16MB)   |
+| Training labels | 60,000             | [train-labels-idx1-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/train-labels-idx1-ubyte.gz) (30KB) | [kuzushiji10-train-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-train-imgs.npz) (50KB)  |
+| Testing images  | 10,000             | [t10k-images-idx3-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/t10k-images-idx3-ubyte.gz) (3MB) | [kuzushiji10-test-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-imgs.npz) (3MB)   |
+| Testing labels  | 10,000             | [t10k-labels-idx1-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/t10k-labels-idx1-ubyte.gz) (5KB)  | [kuzushiji10-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-imgs.npz) (8KB) |
 
 ##### Which format do I download?
 If you're looking for a drop-in replacement for the MNIST or Fashion-MNIST dataset (for tools that currently work with these datasets), download the data in MNIST format.
