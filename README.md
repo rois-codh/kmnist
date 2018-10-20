@@ -6,6 +6,9 @@ The 10 classes of Kuzushiji-MNIST, with the first column showing each character'
 ![Image showing examples of each class of Kuzushiji MNIST](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji-mnist-30example-labelled.png)
 
 ## Get the data
+
+You can run `python download_data.py` to interactively select and download any of these datasets!
+
 ### Kuzushiji-MNIST
 
 Kuzushiji-MNIST contains 70,000 28x28 grayscale images spanning 10 classes (one from each column of [hiragana](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/768px-Table_hiragana.svg.png) except ん), and is perfectly balanced like the original MNIST dataset (6k/1k train/test for each class).
