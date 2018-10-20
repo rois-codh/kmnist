@@ -20,8 +20,19 @@ Kuzushiji-MNIST contains 70,000 28x28 grayscale images spanning 10 classes (one 
 | Testing images  | 10,000             | [t10k-images-idx3-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/t10k-images-idx3-ubyte.gz) (3MB) | [kuzushiji10-test-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-imgs.npz) (3MB)   |
 | Testing labels  | 10,000             | [t10k-labels-idx1-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/t10k-labels-idx1-ubyte.gz) (5KB)  | [kuzushiji10-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-labels.npz) (8KB) |
 
+We recommend using standard top-1 accuracy on the test set for evaluating on Kuzushiji-MNIST.
+
 ##### Which format do I download?
 If you're looking for a drop-in replacement for the MNIST or Fashion-MNIST dataset (for tools that currently work with these datasets), download the data in MNIST format.
 
 Otherwise, it's recommended to download in NumPy format, which can be loaded into an array as easy as:  
 `arr = np.load(filename)['arr_0']`.
+
+## Benchmarks & Results
+
+### Kuzushiji-MNIST Classification
+
+| Model                                                    | Train accuracy | Test accuracy |
+|----------------------------------------------------------|----------------|---------------|
+| [Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py) | 99.31%         | 98.24%        |
+| [4-Nearest-Neighbour benchmark](benchmarks/kuzushiji_mnist_knn.py) | N/A            | 97.4%         |
