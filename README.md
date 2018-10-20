@@ -28,6 +28,17 @@ If you're looking for a drop-in replacement for the MNIST or Fashion-MNIST datas
 Otherwise, it's recommended to download in NumPy format, which can be loaded into an array as easy as:  
 `arr = np.load(filename)['arr_0']`.
 
+### Kuzushiji-49
+
+Kuzushiji-49 contains 230,000 images spanning 49 classes.
+
+| File            | Examples |  Download (NumPy format)      |
+|-----------------|--------------------|----------------------------|
+| Training images | 184,628            | [kuzushiji49-train-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-train-imgs.npz) (50MB)   |
+| Training labels | 184,628            | [kuzushiji49-train-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-train-labels.npz) (200KB)  |
+| Testing images  | 46,185             | [kuzushiji49-test-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-imgs.npz) (13MB)   |
+| Testing labels  | 46,185             | [kuzushiji49-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-labels.npz) (50KB) |
+
 ## Benchmarks & Results
 
 ### Kuzushiji-MNIST Classification

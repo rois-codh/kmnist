@@ -24,6 +24,13 @@ download_dict = {
             'https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-train-labels.npz',
             'https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-imgs.npz',
             'https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-labels.npz'],
+    },
+    '2) Kuzushiji-49 (10 classes, 28x28, 70k examples)': {
+        '1) NumPy data format (.npz)':
+            ['https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-train-imgs.npz',
+            'https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-train-labels.npz',
+            'https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-imgs.npz',
+            'https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-labels.npz'],
     }
 }
 
