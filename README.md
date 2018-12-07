@@ -1,7 +1,6 @@
 # Kuzushiji-MNIST
 
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)  
 📚 [Read the paper](https://arxiv.org/abs/1812.01718) to learn more about Kuzushiji, the datasets and our motivations for making them!
 
 **Kuzushiji-MNIST** is a drop-in replacement for the MNIST dataset (28x28 grayscale, 70,000 images), provided in the original MNIST format as well as a NumPy format. Since MNIST restricts us to 10 classes, we chose one character to represent each of the 10 rows of Hiragana when creating Kuzushiji-MNIST.
@@ -10,11 +9,12 @@
 
 **Kuzushiji-Kanji** is an imbalanced dataset of total 3832 Kanji characters (64x64 grayscale, 140,426 images), ranging from 1,766 examples to only a single example per class.
 
-<p align="center" style="margin: 0px">The 10 classes of Kuzushiji-MNIST, with the first column showing each character's modern hiragana counterpart.</p>
+<p align="center">
+  <img src="images/kmnist_examples.png">
+  The 10 classes of Kuzushiji-MNIST, with the first column showing each character's modern hiragana counterpart.
+</p>
 
-![Image showing examples of each class of Kuzushiji MNIST](images/kmnist_examples.png)
-
-## Get the data
+## Get the data 💾
 
 🌟 You can run `python download_data.py` to interactively select and download any of these datasets!
 
@@ -48,7 +48,14 @@ Kuzushiji-49 contains 266,407 images spanning 49 classes.
 | Testing images  | 46,185             | [kuzushiji49-test-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-imgs.npz) (13MB)   |
 | Testing labels  | 46,185             | [kuzushiji49-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-labels.npz) (50KB) |
 
-## Benchmarks & Results
+### Kuzushiji-Kanji
+
+Kuzushiji-Kanji is a large 64x64 dataset of 3832 Kanji characters, both common and rare.  
+We hope to have the full Kuzushiji-Kanji dataset available for download within the next few days!
+
+![Examples of Kuzushiji-Kanji classes](images/kkanji_examples.png)
+
+## Benchmarks & Results 📈
 
 Have more results to add to the table? Feel free to submit an [issue](https://github.com/rois-codh/kmnist/issues/new) or [pull request](https://github.com/rois-codh/kmnist/compare)!
 
@@ -61,3 +68,7 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |PreActResNet-18 + Manifold Mixup |99.54% | **98.83%** | **97.33%** |
 
 For MNIST and KMNIST we use a standard accuracy metric, while Kuzushiji-49 is evaluated using balanced accuracy (so that all classes have equal weight).
+
+## License
+
+Both the dataset itself and the contents of this repo are licensed under a permissive [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license, except where specified within some benchmark scripts.
