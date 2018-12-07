@@ -1,6 +1,10 @@
 # Kuzushiji-MNIST
 Repository for Kuzushiji_MNIST, Kuzushiji49, and Kuzushiji_Kanji
 
+Kuzushiji-MNIST, a drop-in replacement for the MNIST dataset.
+Kuzushiji-49, a much larger, but imbalanced dataset containing 48 Hiragana characters and one Hiragana iteration mark.
+Kuzushiji-Kanji, an imbalanced dataset of 3832 characters, including rare characters with very few samples.
+
 The 10 classes of Kuzushiji-MNIST, with the first column showing each character's modern hiragana counterpart.
 
 ![Image showing examples of each class of Kuzushiji MNIST](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji-mnist-30example-labelled.png)
