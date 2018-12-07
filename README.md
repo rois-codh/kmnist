@@ -16,7 +16,7 @@
 
 ## Get the data 💾
 
-🌟 You can run `python download_data.py` to interactively select and download any of these datasets!
+🌟 You can run [`python download_data.py`](download_data.py) to interactively select and download any of these datasets!
 
 ### Kuzushiji-MNIST
 
@@ -48,6 +48,8 @@ Kuzushiji-49 contains 266,407 images spanning 49 classes.
 | Testing images  | 46,185             | [kuzushiji49-test-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-imgs.npz) (13MB)   |
 | Testing labels  | 46,185             | [kuzushiji49-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-labels.npz) (50KB) |
 
+We recommend using balanced accuracy on the test set for evaluating on Kuzushiji-49.
+
 ### Kuzushiji-Kanji
 
 Kuzushiji-Kanji is a large 64x64 dataset of 3832 Kanji characters, both common and rare.  
@@ -59,7 +61,7 @@ We hope to have the full Kuzushiji-Kanji dataset available for download within t
 
 Have more results to add to the table? Feel free to submit an [issue](https://github.com/rois-codh/kmnist/issues/new) or [pull request](https://github.com/rois-codh/kmnist/compare)!
 
-|Model                            | MNIST | KMNIST | K49 |
+|Model                            | MNIST | Kuzushiji-MNIST | Kuzushiji-49 |
 |---------------------------------|-------|--------|-----|
 |[4-Nearest Neighbour Baseline](benchmarks/kuzushiji_mnist_knn.py)     |97.14% | 91.56% |86.01%|
 |[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 95.12% |89.25%|
@@ -67,7 +69,7 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |PreActResNet-18 + Input Mixup    |99.54% | 98.41% |97.04%|
 |PreActResNet-18 + Manifold Mixup |99.54% | **98.83%** | **97.33%** |
 
-For MNIST and KMNIST we use a standard accuracy metric, while Kuzushiji-49 is evaluated using balanced accuracy (so that all classes have equal weight).
+For MNIST and Kuzushiji-MNIST we use a standard accuracy metric, while Kuzushiji-49 is evaluated using balanced accuracy (so that all classes have equal weight).
 
 ## License
 
