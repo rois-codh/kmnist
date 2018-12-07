@@ -1,14 +1,18 @@
 # Kuzushiji-MNIST
 
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+📚 [Read the paper](https://arxiv.org/abs/1812.01718) to learn more about Kuzushiji, the datasets and our motivations for making them!
+
 **Kuzushiji-MNIST** is a drop-in replacement for the MNIST dataset (28x28 grayscale, 70,000 images), provided in the original MNIST format as well as a NumPy format. Since MNIST restricts us to 10 classes, we chose one character to represent each of the 10 rows of Hiragana when creating Kuzushiji-MNIST.
 
 **Kuzushiji-49**, as the name suggests, has 49 classes (28x28 grayscale, 266,407 images), is a much larger, but imbalanced dataset containing 48 Hiragana characters and one Hiragana iteration mark.
 
 **Kuzushiji-Kanji** is an imbalanced dataset of total 3832 Kanji characters (64x64 grayscale, 140,426 images), ranging from 1,766 examples to only a single example per class.
 
-The 10 classes of Kuzushiji-MNIST, with the first column showing each character's modern hiragana counterpart.
+<p align="center" style="margin: 0px">The 10 classes of Kuzushiji-MNIST, with the first column showing each character's modern hiragana counterpart.</p>
 
-![Image showing examples of each class of Kuzushiji MNIST](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji-mnist-30example-labelled.png)
+![Image showing examples of each class of Kuzushiji MNIST](images/kmnist_examples.png)
 
 ## Get the data
 
@@ -55,3 +59,5 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |PreActResNet-18                  |**99.56%** | 97.82% |96.64%|
 |PreActResNet-18 + Input Mixup    |99.54% | 98.41% |97.04%|
 |PreActResNet-18 + Manifold Mixup |99.54% | **98.83%** | **97.33%** |
+
+For MNIST and KMNIST we use a standard accuracy metric, while Kuzushiji-49 is evaluated using balanced accuracy (so that all classes have equal weight).
