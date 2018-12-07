@@ -17,7 +17,7 @@ You can run `python download_data.py` to interactively select and download any o
 
 ### Kuzushiji-MNIST
 
-Kuzushiji-MNIST contains 70,000 28x28 grayscale images spanning 10 classes (one from each column of [hiragana](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/768px-Table_hiragana.svg.png) except ん), and is perfectly balanced like the original MNIST dataset (6k/1k train/test for each class).
+Kuzushiji-MNIST contains 70,000 28x28 grayscale images spanning 10 classes (one from each column of [hiragana](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/768px-Table_hiragana.svg.png)), and is perfectly balanced like the original MNIST dataset (6k/1k train/test for each class).
 
 | File            | Examples | Download (MNIST format)    | Download (NumPy format)      |
 |-----------------|--------------------|----------------------------|------------------------------|
@@ -36,7 +36,7 @@ Otherwise, it's recommended to download in NumPy format, which can be loaded int
 
 ### Kuzushiji-49
 
-Kuzushiji-49 contains 230,000 images spanning 49 classes.
+Kuzushiji-49 contains 266,407 images spanning 49 classes.
 
 | File            | Examples |  Download (NumPy format)      |
 |-----------------|--------------------|----------------------------|
