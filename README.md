@@ -54,8 +54,10 @@ Kuzushiji-49 contains 266,407 images spanning 49 classes.
 | [Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py) | 99.31%         | 98.24%        |
 | [4-Nearest-Neighbour benchmark](benchmarks/kuzushiji_mnist_knn.py) | N/A            | 97.4%         |
 
-4-Nearest Neighbour Baseline & 97.14\% & 91.56\% & 86.01\% \\
-Keras Simple CNN Benchmark & 99.06\% & 95.12\% & 89.25\% \\
-PreActResNet-18 & \textbf{99.56\%} & 97.82\% & 96.64\% \\
-PreActResNet-18 + Input Mixup & 99.54\% & 98.41\% & 97.04\% \\
-PreActResNet-18 + Manifold Mixup & 99.54\% & \textbf{98.83\%} & \textbf{97.33\%} \\
+|Model                            | MNIST | KMNIST | K49 |
+|---------------------------------|-------|--------|-----|
+|4-Nearest Neighbour Baseline     |97.14% | 91.56% |86.01%|
+|Keras Simple CNN Benchmark       |99.06% | 95.12% |89.25%|
+|PreActResNet-18                  |99.56% | 97.82% |96.64%|
+|PreActResNet-18 + Input Mixup    |99.54% | 98.41% |97.04%|
+|PreActResNet-18 + Manifold Mixup |99.54% | 98.83% |97.33%|
