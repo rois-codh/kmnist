@@ -39,7 +39,7 @@ Otherwise, it's recommended to download in NumPy format, which can be loaded int
 
 ### Kuzushiji-49
 
-Kuzushiji-49 contains 266,407 images spanning 49 classes.
+Kuzushiji-49 contains 270,912 images spanning 49 classes, and is an extension of the Kuzushiji-MNIST dataset.
 
 | File            | Examples |  Download (NumPy format)      |
 |-----------------|--------------------|----------------------------|
