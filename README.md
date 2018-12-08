@@ -79,4 +79,4 @@ Both the dataset itself and the contents of this repo are licensed under a permi
 
 Suggested attribution for the dataset: 
 
-"KMNIST Dataset" (created by CODH) adapted from "Kuzushiji Dataset" (created by NIJL and others) [doi:10.20676/00000341](https://doi.org/10.20676/00000341)
+"KMNIST Dataset" (created by CODH), adapted from "Kuzushiji Dataset" (created by NIJL and others), [doi:10.20676/00000341](https://doi.org/10.20676/00000341)
