@@ -83,7 +83,7 @@ Suggested attribution for the dataset:
 
 Suggested citation of the paper:
 
-See https://arxiv.org/abs/1812.01718
+See arXiv:1812.01718 https://arxiv.org/abs/1812.01718
 
 ## Related datasets
 
