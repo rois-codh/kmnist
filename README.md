@@ -81,6 +81,10 @@ Suggested attribution for the dataset:
 
 "KMNIST Dataset" (created by CODH), adapted from "Kuzushiji Dataset" (created by NIJL and others), [doi:10.20676/00000341](https://doi.org/10.20676/00000341)
 
+Suggested citation of the paper:
+
+See https://arxiv.org/abs/1812.01718
+
 ## Related datasets
 
 Kuzushiji Dataset http://codh.rois.ac.jp/char-shape/ offers 3,999 character types and 403,242 character images with CSV files containing the bounding box of characters on the original page images. At this moment, the description of the dataset is available only in Japanese, but the English version will be available soon. 
