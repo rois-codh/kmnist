@@ -52,8 +52,10 @@ We recommend using balanced accuracy on the test set for evaluating on Kuzushiji
 
 ### Kuzushiji-Kanji
 
-Kuzushiji-Kanji is a large 64x64 dataset of 3832 Kanji characters, both common and rare.  
-We hope to have the full Kuzushiji-Kanji dataset available for download within the next few days!
+Kuzushiji-Kanji is a large and highly imbalanced 64x64 dataset of 3832 Kanji characters, containing 140,426 images of both common and rare characters.  
+
+The full dataset is available for download [here](http://codh.rois.ac.jp/kmnist/dataset/kkanji/kkanji.tar) (310MB).  
+We plan to release a train/test split version as a low-shot learning dataset very soon.
 
 ![Examples of Kuzushiji-Kanji classes](images/kkanji_examples.png)
 

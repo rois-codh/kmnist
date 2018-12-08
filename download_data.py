@@ -31,7 +31,12 @@ download_dict = {
             'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-train-labels.npz',
             'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-imgs.npz',
             'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-labels.npz'],
+    },
+    '3) Kuzushiji-Kanji (3832 classes, 64x64, 140k examples)': {
+        '1) Folders of images (.tar)':
+            ['http://codh.rois.ac.jp/kmnist/dataset/kkanji/kkanji.tar'],
     }
+
 }
 
 # Download a list of files
