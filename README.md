@@ -78,4 +78,4 @@ For MNIST and Kuzushiji-MNIST we use a standard accuracy metric, while Kuzushiji
 Both the dataset itself and the contents of this repo are licensed under a permissive [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license, except where specified within some benchmark scripts.
 
 Credit: 
-"KMNIST Dataset" (Created by CODH) Derived from "Kuzushiji Dataset" (Created by NIJL and others) [doi:10.20676/00000341](https://doi.org/10.20676/00000341)
+"KMNIST Dataset" (Created by CODH) Adapted from "Kuzushiji Dataset" (Created by NIJL and others) [doi:10.20676/00000341](https://doi.org/10.20676/00000341)
