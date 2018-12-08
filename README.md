@@ -24,10 +24,10 @@ Kuzushiji-MNIST contains 70,000 28x28 grayscale images spanning 10 classes (one 
 
 | File            | Examples | Download (MNIST format)    | Download (NumPy format)      |
 |-----------------|--------------------|----------------------------|------------------------------|
-| Training images | 60,000             | [train-images-idx3-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/train-images-idx3-ubyte.gz) (17MB) | [kuzushiji10-train-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-train-imgs.npz) (16MB)   |
-| Training labels | 60,000             | [train-labels-idx1-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/train-labels-idx1-ubyte.gz) (30KB) | [kuzushiji10-train-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-train-labels.npz) (50KB)  |
-| Testing images  | 10,000             | [t10k-images-idx3-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/t10k-images-idx3-ubyte.gz) (3MB) | [kuzushiji10-test-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-imgs.npz) (3MB)   |
-| Testing labels  | 10,000             | [t10k-labels-idx1-ubyte.gz](https://storage.googleapis.com/kuzushiji-mnist/t10k-labels-idx1-ubyte.gz) (5KB)  | [kuzushiji10-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji10-test-labels.npz) (8KB) |
+| Training images | 60,000             | [train-images-idx3-ubyte.gz](http://codh.rois.ac.jp/kmnist/dataset/kmnist/train-images-idx3-ubyte.gz) (18MB) | [kmnist-train-imgs.npz](http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-train-imgs.npz) (18MB)   |
+| Training labels | 60,000             | [train-labels-idx1-ubyte.gz](http://codh.rois.ac.jp/kmnist/dataset/kmnist/train-labels-idx1-ubyte.gz) (30KB) | [kmnist-train-labels.npz](http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-train-labels.npz) (30KB)  |
+| Testing images  | 10,000             | [t10k-images-idx3-ubyte.gz](http://codh.rois.ac.jp/kmnist/dataset/kmnist/t10k-images-idx3-ubyte.gz) (3MB) | [kmnist-test-imgs.npz](http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-imgs.npz) (3MB)   |
+| Testing labels  | 10,000             | [t10k-labels-idx1-ubyte.gz](http://codh.rois.ac.jp/kmnist/dataset/kmnist/t10k-labels-idx1-ubyte.gz) (5KB)  | [kmnist-test-labels.npz](http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-labels.npz) (5KB) |
 
 We recommend using standard top-1 accuracy on the test set for evaluating on Kuzushiji-MNIST.
 
@@ -43,10 +43,10 @@ Kuzushiji-49 contains 270,912 images spanning 49 classes, and is an extension of
 
 | File            | Examples |  Download (NumPy format)      |
 |-----------------|--------------------|----------------------------|
-| Training images | 232,365            | [kuzushiji49-train-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-train-imgs.npz) (50MB)   |
-| Training labels | 232,365            | [kuzushiji49-train-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-train-labels.npz) (200KB)  |
-| Testing images  | 38,547             | [kuzushiji49-test-imgs.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-imgs.npz) (13MB)   |
-| Testing labels  | 38,547             | [kuzushiji49-test-labels.npz](https://storage.googleapis.com/kuzushiji-mnist/kuzushiji49-test-labels.npz) (50KB) |
+| Training images | 232,365            | [k49-train-imgs.npz](http://codh.rois.ac.jp/kmnist/dataset/k49/k49-train-imgs.npz) (63MB)   |
+| Training labels | 232,365            | [k49-train-labels.npz](http://codh.rois.ac.jp/kmnist/dataset/k49/k49-train-labels.npz) (200KB)  |
+| Testing images  | 38,547             | [k49-test-imgs.npz](http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-imgs.npz) (11MB)   |
+| Testing labels  | 38,547             | [k49-test-labels.npz](http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-labels.npz) (50KB) |
 
 We recommend using balanced accuracy on the test set for evaluating on Kuzushiji-49.
 
