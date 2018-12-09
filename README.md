@@ -77,13 +77,26 @@ For MNIST and Kuzushiji-MNIST we use a standard accuracy metric, while Kuzushiji
 
 Both the dataset itself and the contents of this repo are licensed under a permissive [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license, except where specified within some benchmark scripts.
 
-Suggested attribution of the dataset: 
+## Citing Kuzushiji-MNIST
 
+If you use any of the Kuzushiji datasets in your work, we would appreciate a reference to our paper:
+
+**Deep Learning for Classical Japanese Literature. Tarin Clanuwat et al. [arXiv:1812.01718](https://arxiv.org/abs/1812.01718)**
+
+```latex
+@online{xiao2017/online,
+  author       = {Tarin Clanuwat and Mikel Bober-Irizar and Asanobu Kitamoto and Alex Lamb and Kazuaki Yamamoto and David Ha},
+  title        = {Deep Learning for Classical Japanese Literature},
+  date         = {2018-12-03},
+  year         = {2018},
+  eprintclass  = {cs.CV},
+  eprinttype   = {arXiv},
+  eprint       = {cs.CV/1812.01718},
+}
+```
+
+You may also wish to cite the dataset by its DOI directly:  
 "KMNIST Dataset" (created by CODH), adapted from "Kuzushiji Dataset" (created by NIJL and others), [doi:10.20676/00000341](https://doi.org/10.20676/00000341)
-
-Suggested citation of the paper:
-
-See arXiv:1812.01718 https://arxiv.org/abs/1812.01718
 
 ## Related datasets
 
