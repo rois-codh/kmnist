@@ -99,8 +99,6 @@ If you use any of the Kuzushiji datasets in your work, we would appreciate a ref
 }
 ```
 
-You may also wish to cite the dataset by its DOI directly:  
-"KMNIST Dataset" (created by CODH), adapted from "Kuzushiji Dataset" (created by NIJL and others), [doi:10.20676/00000341](https://doi.org/10.20676/00000341)
 
 ## Related datasets
 
