@@ -88,7 +88,7 @@ If you use any of the Kuzushiji datasets in your work, we would appreciate a ref
 **Deep Learning for Classical Japanese Literature. Tarin Clanuwat et al. [arXiv:1812.01718](https://arxiv.org/abs/1812.01718)**
 
 ```latex
-@online{xiao2017/online,
+@online{clanuwat2018deep,
   author       = {Tarin Clanuwat and Mikel Bober-Irizar and Asanobu Kitamoto and Alex Lamb and Kazuaki Yamamoto and David Ha},
   title        = {Deep Learning for Classical Japanese Literature},
   date         = {2018-12-03},
