@@ -50,7 +50,7 @@ Kuzushiji-49 contains 270,912 images spanning 49 classes, and is an extension of
 | Testing images  | 38,547             | [k49-test-imgs.npz](http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-imgs.npz) (11MB)   |
 | Testing labels  | 38,547             | [k49-test-labels.npz](http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-labels.npz) (50KB) |
 
-Mapping from class indices to characters: [k49_classmap.csv](http://codh.rois.ac.jp/kmnist/dataset/kmnist/k49_classmap.csv) (1KB)
+Mapping from class indices to characters: [k49_classmap.csv](http://codh.rois.ac.jp/kmnist/dataset/k49/k49_classmap.csv) (1KB)
 
 We recommend using balanced accuracy on the test set for evaluating on Kuzushiji-49.
 
