@@ -67,13 +67,14 @@ We plan to release a train/test split version as a low-shot learning dataset ver
 
 Have more results to add to the table? Feel free to submit an [issue](https://github.com/rois-codh/kmnist/issues/new) or [pull request](https://github.com/rois-codh/kmnist/compare)!
 
-|Model                            | MNIST | Kuzushiji-MNIST | Kuzushiji-49 |
-|---------------------------------|-------|--------|-----|
+|Model                            | MNIST | Kuzushiji-MNIST | Kuzushiji-49 | Credit
+|---------------------------------|-------|--------|-----|---|
 |[4-Nearest Neighbour Baseline](benchmarks/kuzushiji_mnist_knn.py)     |97.14% | 91.56% |86.01%|
 |[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 95.12% |89.25%|
-|PreActResNet-18                  |**99.56%** | 97.82% |96.64%|
+|PreActResNet-18                  |99.56% | 97.82% |96.64%|
 |PreActResNet-18 + Input Mixup    |99.54% | 98.41% |97.04%|
-|PreActResNet-18 + Manifold Mixup |99.54% | **98.83%** | **97.33%** |
+|PreActResNet-18 + Manifold Mixup |99.54% | 98.83% | **97.33%** |
+|[ResNet18 + VGG Ensemble](https://github.com/ranihorev/Kuzushiji_MNIST) | **99.60%** | **98.90%** | | [Rani Horev](https://twitter.com/HorevRani)
 
 For MNIST and Kuzushiji-MNIST we use a standard accuracy metric, while Kuzushiji-49 is evaluated using balanced accuracy (so that all classes have equal weight).
 
