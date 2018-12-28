@@ -69,7 +69,8 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 
 |Model                            | MNIST | Kuzushiji-MNIST | Kuzushiji-49 | Credit
 |---------------------------------|-------|--------|-----|---|
-|[4-Nearest Neighbour Baseline](benchmarks/kuzushiji_mnist_knn.py)     |97.14% | 91.56% |86.01%|
+|[4-Nearest Neighbour Baseline](benchmarks/kuzushiji_mnist_knn.py)     |97.14% | 91.56% | 86.01%|
+|[Tuned SVM (RBF kernel)](https://github.com/rois-codh/kmnist/issues/3) | 98.57% | 92.82% | | [TomZephire](https://github.com/TomZephire)
 |[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 95.12% |89.25%|
 |PreActResNet-18                  |99.56% | 97.82% |96.64%|
 |PreActResNet-18 + Input Mixup    |99.54% | 98.41% |97.04%|
