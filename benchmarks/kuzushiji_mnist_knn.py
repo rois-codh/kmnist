@@ -8,10 +8,10 @@ def load(f):
     return np.load(f)['arr_0']
 
 # Load the data
-x_train = load('kuzushiji10-train-imgs.npz')
-x_test = load('kuzushiji10-test-imgs.npz')
-y_train = load('kuzushiji10-train-labels.npz')
-y_test = load('kuzushiji10-test-labels.npz')
+x_train = load('kmnist-train-imgs.npz')
+x_test = load('kmnist-test-imgs.npz')
+y_train = load('kmnist-train-labels.npz')
+y_test = load('kmnist-test-labels.npz')
 
 # Flatten images
 x_train = x_train.reshape(-1, 784)

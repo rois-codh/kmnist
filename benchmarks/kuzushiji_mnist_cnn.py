@@ -19,10 +19,10 @@ def load(f):
     return np.load(f)['arr_0']
 
 # Load the data
-x_train = load('kuzushiji10-train-imgs.npz')
-x_test = load('kuzushiji10-test-imgs.npz')
-y_train = load('kuzushiji10-train-labels.npz')
-y_test = load('kuzushiji10-test-labels.npz')
+x_train = load('kmnist-train-imgs.npz')
+x_test = load('kmnist-test-imgs.npz')
+y_train = load('kmnist-train-labels.npz')
+y_test = load('kmnist-test-labels.npz')
 
 if K.image_data_format() == 'channels_first':
     x_train = x_train.reshape(x_train.shape[0], 1, img_rows, img_cols)
