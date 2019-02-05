@@ -3,6 +3,24 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)  
 📚 [Read the paper](https://arxiv.org/abs/1812.01718) to learn more about Kuzushiji, the datasets and our motivations for making them!
 
+## Citing Kuzushiji-MNIST
+
+If you use any of the Kuzushiji datasets in your work, we would appreciate a reference to our paper:
+
+**Deep Learning for Classical Japanese Literature. Tarin Clanuwat et al. [arXiv:1812.01718](https://arxiv.org/abs/1812.01718)**
+
+```latex
+@online{clanuwat2018deep,
+  author       = {Tarin Clanuwat and Mikel Bober-Irizar and Asanobu Kitamoto and Alex Lamb and Kazuaki Yamamoto and David Ha},
+  title        = {Deep Learning for Classical Japanese Literature},
+  date         = {2018-12-03},
+  year         = {2018},
+  eprintclass  = {cs.CV},
+  eprinttype   = {arXiv},
+  eprint       = {cs.CV/1812.01718},
+}
+```
+
 **Kuzushiji-MNIST** is a drop-in replacement for the MNIST dataset (28x28 grayscale, 70,000 images), provided in the original MNIST format as well as a NumPy format. Since MNIST restricts us to 10 classes, we chose one character to represent each of the 10 rows of Hiragana when creating Kuzushiji-MNIST.
 
 **Kuzushiji-49**, as the name suggests, has 49 classes (28x28 grayscale, 270,912 images), is a much larger, but imbalanced dataset containing 48 Hiragana characters and one Hiragana iteration mark.
@@ -87,23 +105,7 @@ Both the dataset itself and the contents of this repo are licensed under a permi
 (created by NIJL and others), doi:10.20676/00000341
 
 
-## Citing Kuzushiji-MNIST
 
-If you use any of the Kuzushiji datasets in your work, we would appreciate a reference to our paper:
-
-**Deep Learning for Classical Japanese Literature. Tarin Clanuwat et al. [arXiv:1812.01718](https://arxiv.org/abs/1812.01718)**
-
-```latex
-@online{clanuwat2018deep,
-  author       = {Tarin Clanuwat and Mikel Bober-Irizar and Asanobu Kitamoto and Alex Lamb and Kazuaki Yamamoto and David Ha},
-  title        = {Deep Learning for Classical Japanese Literature},
-  date         = {2018-12-03},
-  year         = {2018},
-  eprintclass  = {cs.CV},
-  eprinttype   = {arXiv},
-  eprint       = {cs.CV/1812.01718},
-}
-```
 
 
 ## Related datasets
