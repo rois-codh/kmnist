@@ -21,7 +21,7 @@ If you use any of the Kuzushiji datasets in your work, we would appreciate a ref
 }
 ```
 ## News and Updates
-**IMPORTANT** If you downloaded the KMNIST and K49 datasets before 5 February 2019, please kindly download the dataset and run your code again. We fixed minor bugs due to image processing and it might slightly change the result number. Thank you for your coorporation.
+**IMPORTANT** If you downloaded the KMNIST and K49 datasets before **5 February 2019**, please kindly download the dataset and run your code again. We fixed minor bugs due to image processing and it might slightly change the result number. Thank you for your coorporation.
 
 ## The Dataset
 
