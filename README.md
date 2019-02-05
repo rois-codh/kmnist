@@ -23,6 +23,8 @@ If you use any of the Kuzushiji datasets in your work, we would appreciate a ref
 ## News and Updates
 **IMPORTANT** If you downloaded the KMNIST and K49 datasets before 5 February 2019, please kindly download the dataset and run your code again. We fixed minor bugs due to image processing and it might slightly change the result number. Thank you for your coorporation.
 
+## The Dataset
+
 **Kuzushiji-MNIST** is a drop-in replacement for the MNIST dataset (28x28 grayscale, 70,000 images), provided in the original MNIST format as well as a NumPy format. Since MNIST restricts us to 10 classes, we chose one character to represent each of the 10 rows of Hiragana when creating Kuzushiji-MNIST.
 
 **Kuzushiji-49**, as the name suggests, has 49 classes (28x28 grayscale, 270,912 images), is a much larger, but imbalanced dataset containing 48 Hiragana characters and one Hiragana iteration mark.
