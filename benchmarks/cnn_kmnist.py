@@ -10,6 +10,7 @@ from keras import backend as K
 import argparse
 import numpy as np
 import os
+from utils import load_train_data, load_test_data, load
 import wandb
 from wandb.keras import WandbCallback
 
@@ -30,13 +31,9 @@ NUM_CLASSES = 10
 # input image dimensions
 img_rows, img_cols = 28, 28
 
-# load data file into array
-def load(f):
-    return np.load(f)['arr_0']
-
 def train_cnn(args):
   # initialize wandb logging to your project
-  wandb.init(project=PROJECT_NAME)
+  wandb.init(project=args.project_name)
   config = {
     "batch_size" : args.batch_size,
     "num_classes" : args.num_classes,
@@ -50,11 +47,8 @@ def train_cnn(args):
   wandb.config.update(config)
 
   # Load the data form the relative path provided
-  DATA_HOME = args.data_home
-  x_train = load(os.path.join(DATA_HOME, 'kmnist-train-imgs.npz'))
-  x_test = load(os.path.join(DATA_HOME, 'kmnist-test-imgs.npz'))
-  y_train = load(os.path.join(DATA_HOME, 'kmnist-train-labels.npz'))
-  y_test = load(os.path.join(DATA_HOME, 'kmnist-test-labels.npz'))
+  x_train, y_train = load_train_data(args.data_home)
+  x_test, y_test = load_test_data(args.data_home)
 
   if K.image_data_format() == 'channels_first':
     x_train = x_train.reshape(x_train.shape[0], 1, img_rows, img_cols)
