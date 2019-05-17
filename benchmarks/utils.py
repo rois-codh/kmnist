@@ -1,4 +1,5 @@
 # utility functions for benchmarks
+import numpy as np
 import os
 
 # load data file into array

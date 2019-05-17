@@ -3,6 +3,7 @@
 from sklearn.neighbors import KNeighborsClassifier
 import argparse
 import numpy as np
+import os
 import time
 from utils import load_train_data, load_test_data, load
 import wandb
@@ -30,6 +31,7 @@ def train_knn(args):
 
   wandb.init(project=args.project_name)
   config = {
+    "model_type" : "knn",
     "n_train" : N_TRAIN,
     "n_test" : N_TEST,
     "k_neighbors" : args.k_neighbors,
@@ -49,7 +51,7 @@ def train_knn(args):
   wandb.log({"val_accuracy" : test_score})
 
 if __name__ == "__main__":
-  parser = argparse.ArgumentParser()
+  parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
   parser.add_argument(
     "-m",
     "--model_name",

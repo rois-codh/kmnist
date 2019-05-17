@@ -35,6 +35,7 @@ def train_cnn(args):
   # initialize wandb logging to your project
   wandb.init(project=args.project_name)
   config = {
+    "model_type" : "cnn",
     "batch_size" : args.batch_size,
     "num_classes" : args.num_classes,
     "epochs" : args.epochs,
@@ -74,16 +75,16 @@ def train_cnn(args):
 
   # Build model
   model = Sequential()
-  model.add(Conv2D(L1_SIZE, kernel_size=(3, 3),
+  model.add(Conv2D(args.l1_size, kernel_size=(3, 3),
                  activation='relu',
                  input_shape=input_shape))
-  model.add(Conv2D(L2_SIZE, (3, 3), activation='relu'))
+  model.add(Conv2D(args.l2_size, (3, 3), activation='relu'))
   model.add(MaxPooling2D(pool_size=(2, 2)))
   model.add(Dropout(args.dropout_1))
   model.add(Flatten())
-  model.add(Dense(FC1_SIZE, activation='relu'))
+  model.add(Dense(args.fc1_size, activation='relu'))
   model.add(Dropout(args.dropout_2))
-  model.add(Dense(NUM_CLASSES, activation='softmax'))
+  model.add(Dense(args.num_classes, activation='softmax'))
 
   model.compile(loss="categorical_crossentropy",
               optimizer="adadelta",
@@ -104,7 +105,7 @@ def train_cnn(args):
   print('Test accuracy:', test_score[1])
 
 if __name__ == "__main__":
-  parser = argparse.ArgumentParser()
+  parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
   parser.add_argument(
     "-m",
     "--model_name",
@@ -127,7 +128,7 @@ if __name__ == "__main__":
     "--batch_size",
     type=int,
     default=BATCH_SIZE,
-    help="batch_size")
+    help="batch size")
   parser.add_argument(
     "--dropout_1",
     type=float,
@@ -146,22 +147,22 @@ if __name__ == "__main__":
     help="number of training epochs (passes through full training data)")
   parser.add_argument(
     "--fc1_size",
-    type=float,
+    type=int,
     default=FC1_SIZE,
     help="size of fully-connected layer")
   parser.add_argument(
     "--l1_size",
-    type=float,
+    type=int,
     default=L1_SIZE,
     help="size of first conv layer")
   parser.add_argument(
     "--l2_size",
-    type=float,
+    type=int,
     default=L2_SIZE,
     help="size of second conv layer")
   parser.add_argument(
     "--num_classes",
-    type=float,
+    type=int,
     default=NUM_CLASSES,
     help="number of classes (default: 10)")
   parser.add_argument(
