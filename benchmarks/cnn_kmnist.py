@@ -16,9 +16,8 @@ from wandb.keras import WandbCallback
 
 # default configuration / hyperparameter values
 # you can modify these below or via command line
-PROJECT_NAME = "kmnist"
 MODEL_NAME = ""
-DATA_HOME = "../dataset" 
+DATA_HOME = "./dataset" 
 BATCH_SIZE = 128
 EPOCHS = 10
 L1_SIZE = 32
@@ -33,7 +32,7 @@ img_rows, img_cols = 28, 28
 
 def train_cnn(args):
   # initialize wandb logging to your project
-  wandb.init(project=args.project_name)
+  wandb.init()
   config = {
     "model_type" : "cnn",
     "batch_size" : args.batch_size,
@@ -112,12 +111,6 @@ if __name__ == "__main__":
     type=str,
     default=MODEL_NAME,
     help="Name of this model/run (model will be saved to this file)")
-  parser.add_argument(
-    "-p",
-    "--project_name",
-    type=str,
-    default=PROJECT_NAME,
-    help="Main project name")
   parser.add_argument(
     "--data_home",
     type=str,

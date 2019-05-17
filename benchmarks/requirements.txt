@@ -1,0 +1,6 @@
+Keras==2.2.4
+sklearn==0.0
+tensorflow==1.13.1
+tqdm==4.32.1
+urllib3==1.25.2
+wandb==0.7.3

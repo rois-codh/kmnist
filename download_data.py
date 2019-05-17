@@ -77,4 +77,5 @@ def traverse_dict(d):
     else:
         traverse_dict(next_level)     # Otherwise, repeat with the next level
 
-traverse_dict(download_dict)
+if __name__ == '__main__':
+    traverse_dict(download_dict)

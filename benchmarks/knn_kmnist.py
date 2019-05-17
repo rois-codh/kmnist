@@ -10,9 +10,8 @@ import wandb
 
 # default configuration / hyperparameter values
 # you can modify these below or via command line
-PROJECT_NAME = "kmnist"
 MODEL_NAME = ""
-DATA_HOME = "../dataset"
+DATA_HOME = "./dataset"
 K_NEIGHBORS = 4
 WEIGHTS = "distance"
 
@@ -29,7 +28,7 @@ def train_knn(args):
   N_TRAIN = len(y_train)
   N_TEST = len(y_test)
 
-  wandb.init(project=args.project_name)
+  wandb.init()
   config = {
     "model_type" : "knn",
     "n_train" : N_TRAIN,
@@ -58,12 +57,6 @@ if __name__ == "__main__":
     type=str,
     default=MODEL_NAME,
     help="Name of this model/run (model will be saved to this file)")
-  parser.add_argument(
-    "-p",
-    "--project_name",
-    type=str,
-    default=PROJECT_NAME,
-    help="Main project name")
   parser.add_argument(
     "--data_home",
     type=str,
