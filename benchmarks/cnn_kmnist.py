@@ -26,6 +26,7 @@ DROPOUT_1 = 0.25
 DROPOUT_2 = 0.5
 FC1_SIZE = 128
 NUM_CLASSES = 10
+TEST_RUN = False
 
 # input image dimensions
 img_rows, img_cols = 28, 28
@@ -63,6 +64,14 @@ def train_cnn(args):
   x_test = x_test.astype('float32')
   x_train /= 255
   x_test /= 255
+  if args.test_run:
+    MINI_TR = 6000
+    MINI_TS = 1000
+    x_train = x_train[:MINI_TR]
+    y_train = y_train[:MINI_TR]
+    x_test = x_test[:MINI_TS]
+    y_test = y_test[:MINI_TS]
+ 
   N_TRAIN = len(x_train)
   N_TEST = len(x_test)
   wandb.config.update({"n_train" : N_TRAIN, "n_test" : N_TEST})
@@ -163,7 +172,11 @@ if __name__ == "__main__":
     "--dry_run",
     action="store_true",
     help="Dry run (do not log to wandb)")
-  
+  parser.add_argument(
+    "--test_run",
+    action="store_true",
+    default=TEST_RUN,
+    help="quick test run on 10% of the data")   
   args = parser.parse_args()
 
   # easier testing--don't log to wandb if dry run is set
