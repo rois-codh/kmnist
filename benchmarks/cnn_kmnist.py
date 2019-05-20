@@ -1,11 +1,10 @@
 # Based on MNIST CNN from Keras' examples: https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py (MIT License)
 
 from __future__ import print_function
-import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, Flatten
-from tensorflow.keras.layers import Conv2D, MaxPooling2D
-from keras import backend as K
+
+import tensorflow as tf
+from tensorflow.keras import layers
+from tensorflow.keras import backend as K
 
 import argparse
 import numpy as np
@@ -22,8 +21,8 @@ BATCH_SIZE = 128
 EPOCHS = 10
 L1_SIZE = 32
 L2_SIZE = 64
-DROPOUT_1 = 0.25
-DROPOUT_2 = 0.5
+DROPOUT_1_RATE = 0.75
+DROPOUT_2_RATE = 0.5
 FC1_SIZE = 128
 NUM_CLASSES = 10
 
@@ -77,21 +76,21 @@ def train_cnn(args):
   print('{} train samples, {} test samples'.format(N_TRAIN, N_TEST))
 
   # Convert class vectors to binary class matrices
-  y_train = keras.utils.to_categorical(y_train, NUM_CLASSES)
-  y_test = keras.utils.to_categorical(y_test, NUM_CLASSES)
+  y_train = tf.keras.utils.to_categorical(y_train, NUM_CLASSES)
+  y_test = tf.keras.utils.to_categorical(y_test, NUM_CLASSES)
 
   # Build model
-  model = Sequential()
-  model.add(Conv2D(args.l1_size, kernel_size=(3, 3),
+  model = tf.keras.Sequential()
+  model.add(layers.Conv2D(args.l1_size, kernel_size=(3, 3),
                  activation='relu',
                  input_shape=input_shape))
-  model.add(Conv2D(args.l2_size, (3, 3), activation='relu'))
-  model.add(MaxPooling2D(pool_size=(2, 2)))
-  model.add(Dropout(args.dropout_1))
-  model.add(Flatten())
-  model.add(Dense(args.fc1_size, activation='relu'))
-  model.add(Dropout(args.dropout_2))
-  model.add(Dense(args.num_classes, activation='softmax'))
+  model.add(layers.Conv2D(args.l2_size, (3, 3), activation='relu'))
+  model.add(layers.MaxPooling2D(pool_size=(2, 2)))
+  model.add(layers.Dropout(args.dropout_1))
+  model.add(layers.Flatten())
+  model.add(layers.Dense(args.fc1_size, activation='relu'))
+  model.add(layers.Dropout(args.dropout_2))
+  model.add(layers.Dense(args.num_classes, activation='softmax'))
 
   model.compile(loss="categorical_crossentropy",
               optimizer="adadelta",
@@ -133,13 +132,13 @@ if __name__ == "__main__":
   parser.add_argument(
     "--dropout_1",
     type=float,
-    default=DROPOUT_1,
-    help="dropout  layers")
+    default=DROPOUT_1_RATE,
+    help="dropout rate for first dropout layer")
   parser.add_argument(
     "--dropout_2",
     type=float,
-    default=DROPOUT_2,
-    help="dropout before dense layers")
+    default=DROPOUT_2_RATE,
+    help="dropout rate for second dropout layer")
   parser.add_argument(
     "-e",
     "--epochs",
@@ -181,10 +180,8 @@ if __name__ == "__main__":
   if args.dry_run:
     os.environ['WANDB_MODE'] = 'dryrun'
 
-  # create run name
-  if not args.model_name:
-    print("warning: no run name provided")
-  else:
+  # create run name from command line
+  if args.model_name:
     os.environ['WANDB_DESCRIPTION'] = args.model_name
 
   train_cnn(args)
