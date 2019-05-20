@@ -1,10 +1,12 @@
+# cnn_kmnist.py
+#----------------
+# Train a small CNN to identify 10 Japanese characters in classical script
 # Based on MNIST CNN from Keras' examples: https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py (MIT License)
 
 from __future__ import print_function
 
 import tensorflow as tf
 from tensorflow.keras import layers
-from tensorflow.keras import backend as K
 
 import argparse
 import numpy as np
@@ -21,13 +23,15 @@ BATCH_SIZE = 128
 EPOCHS = 10
 L1_SIZE = 32
 L2_SIZE = 64
-DROPOUT_1_RATE = 0.75
+DROPOUT_1_RATE = 0.25
 DROPOUT_2_RATE = 0.5
 FC1_SIZE = 128
 NUM_CLASSES = 10
 
 # input image dimensions
 img_rows, img_cols = 28, 28
+# ground truth labels for the 10 classes of Kuzushiji-MNIST Japanese characters 
+LABELS =["お", "き", "す", "つ", "な", "は", "ま", "や", "れ", "を"] 
 
 def train_cnn(args):
   # initialize wandb logging to your project
@@ -49,14 +53,10 @@ def train_cnn(args):
   x_train, y_train = load_train_data(args.data_home)
   x_test, y_test = load_test_data(args.data_home)
 
-  if K.image_data_format() == 'channels_first':
-    x_train = x_train.reshape(x_train.shape[0], 1, img_rows, img_cols)
-    x_test = x_test.reshape(x_test.shape[0], 1, img_rows, img_cols)
-    input_shape = (1, img_rows, img_cols)
-  else:
-    x_train = x_train.reshape(x_train.shape[0], img_rows, img_cols, 1)
-    x_test = x_test.reshape(x_test.shape[0], img_rows, img_cols, 1)
-    input_shape = (img_rows, img_cols, 1)
+  # reshape to channels last
+  x_train = x_train.reshape(x_train.shape[0], img_rows, img_cols, 1)
+  x_test = x_test.reshape(x_test.shape[0], img_rows, img_cols, 1)
+  input_shape = (img_rows, img_cols, 1)
 
   x_train = x_train.astype('float32')
   x_test = x_test.astype('float32')
@@ -101,7 +101,7 @@ def train_cnn(args):
             epochs=args.epochs,
             verbose=1,
             validation_data=(x_test, y_test),
-            callbacks=[WandbCallback()])
+            callbacks=[WandbCallback(data_type="image", labels=LABELS)])
 
   train_score = model.evaluate(x_train, y_train, verbose=0)
   test_score = model.evaluate(x_test, y_test, verbose=0)
