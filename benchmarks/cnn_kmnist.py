@@ -26,7 +26,6 @@ DROPOUT_1 = 0.25
 DROPOUT_2 = 0.5
 FC1_SIZE = 128
 NUM_CLASSES = 10
-TEST_RUN = False
 
 # input image dimensions
 img_rows, img_cols = 28, 28
@@ -175,8 +174,7 @@ if __name__ == "__main__":
   parser.add_argument(
     "--test_run",
     action="store_true",
-    default=TEST_RUN,
-    help="quick test run on 10% of the data")   
+    help="train quickly on a tenth of the data")   
   args = parser.parse_args()
 
   # easier testing--don't log to wandb if dry run is set
