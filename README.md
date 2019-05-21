@@ -16,11 +16,7 @@ Kuzushiji-MNIST perfectly replaces the well-known MNIST. This balanced dataset c
 ## Usage
 
 Please refer to the [benchmark instructions](https://app.wandb.ai/wandb/kmnist/benchmark) to get started.
-The ``benchmarks`` directory contains two starter scripts: a K-nearest-neighbors and simple convolutional net approach to kmnist. From ``benchmarks``, you can run:
-* ``python knn_kmnist.py --quick_run`` to train a CNN quickly on 10% of the data
-* ``python knn_kmnist.py`` to train the KNN
-* ``python cnn_kmnist.py`` to train the CNN
-
+The ``benchmarks`` directory contains two starter scripts: a K-nearest-neighbors and simple convolutional net approach to kmnist.
 Run either script with ``-h`` to see all the options&mdash;hyperparameters and config can be set at the top of each script or overriden via the command line for convenience.
 
 ## References
