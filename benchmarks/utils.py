@@ -2,6 +2,15 @@
 import numpy as np
 import os
 
+from tensorflow.keras.callbacks import Callback
+import wandb
+
+# extend Keras callback to log benchmark-specific key, "kmnist_val_acc"
+class KmnistCallback(Callback):
+  def on_epoch_end(self, epoch, logs={}):
+    wandb.log({"kmnist_val_acc" : logs["val_accuracy"]})
+
+
 # load data file into array
 def load(f):
     return np.load(f)['arr_0']

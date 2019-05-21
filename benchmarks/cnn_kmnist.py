@@ -11,7 +11,7 @@ from tensorflow.keras import layers
 import argparse
 import numpy as np
 import os
-from utils import load_train_data, load_test_data, load
+from utils import load_train_data, load_test_data, load, KmnistCallback
 import wandb
 from wandb.keras import WandbCallback
 
@@ -101,7 +101,7 @@ def train_cnn(args):
             epochs=args.epochs,
             verbose=1,
             validation_data=(x_test, y_test),
-            callbacks=[WandbCallback(data_type="image", labels=LABELS)])
+            callbacks=[KmnistCallback(), WandbCallback(data_type="image", labels=LABELS)])
 
   train_score = model.evaluate(x_train, y_train, verbose=0)
   test_score = model.evaluate(x_test, y_test, verbose=0)
