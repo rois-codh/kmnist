@@ -7,7 +7,7 @@ You can learn more and [join the benchmark here](https://app.wandb.ai/wandb/kmni
 
 ## Objective
 
-Given an image, correctly classify it as showing one of tenclassical Japanese cursive characters. This benchmark is a fresh reimagining of the well-known deep learning baseline of handwritten digits (mnist). It preserves the technical simplicity of mnist and offers more headroom for creative exploration, since the solution space is less explored and visual intuition is unreliable (only a small number of experts can read Kuzushiji script, regardless of fluency in contemporary Japanese). This is an exciting challenge with a tangible potential outcome of making classical Japanese literature more accessible.
+Given an image, correctly classify it as showing one of ten classical Japanese cursive characters. This benchmark is a fresh reimagining of the well-known deep learning baseline of handwritten digits (mnist). It preserves the technical simplicity of mnist and offers more headroom for creativity, since the solution space is less explored and visual intuition is unreliable (only a small number of experts can read Kuzushiji script, regardless of fluency in contemporary Japanese). This is an exciting challenge with a tangible potential outcome of making classical Japanese literature more accessible.
 
 ## Dataset
 
