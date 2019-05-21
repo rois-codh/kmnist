@@ -47,7 +47,7 @@ def train_knn(args):
   # store train accuracy as validation accuracy as well to simplify
   # comparison to CNN/other scripts
   wandb.log({"accuracy" : test_score})
-  wandb.log({"val_accuracy" : test_score})
+  wandb.log({"kmnist_val_acc" : test_score})
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -86,9 +86,7 @@ if __name__ == "__main__":
     os.environ['WANDB_MODE'] = 'dryrun'
 
   # create run name
-  if not args.model_name:
-    print("warning: no run name provided")
-  else:
+  if args.model_name:
     os.environ['WANDB_DESCRIPTION'] = args.model_name
 
   train_knn(args)

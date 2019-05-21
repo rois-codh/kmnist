@@ -62,7 +62,7 @@ def train_cnn(args):
   x_test = x_test.astype('float32')
   x_train /= 255
   x_test /= 255
-  if args.test_run:
+  if args.quick_run:
     MINI_TR = 6000
     MINI_TS = 1000
     x_train = x_train[:MINI_TR]
@@ -171,7 +171,7 @@ if __name__ == "__main__":
     action="store_true",
     help="Dry run (do not log to wandb)")
   parser.add_argument(
-    "--test_run",
+    "--quick_run",
     action="store_true",
     help="train quickly on a tenth of the data")   
   args = parser.parse_args()
