@@ -32,8 +32,8 @@ NUM_CLASSES = 10
 # input image dimensions
 img_rows, img_cols = 28, 28
 # ground truth labels for the 10 classes of Kuzushiji-MNIST Japanese characters 
-#LABELS =["お", "き", "す", "つ", "な", "は", "ま", "や", "れ", "を"] 
-LABELS = ["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち",
+LABELS_10 =["お", "き", "す", "つ", "な", "は", "ま", "や", "れ", "を"] 
+LABELS_49 = ["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち",
 "つ","て","と","な","に","ぬ","ね","の","は","ひ","ふ","へ","ほ","ま","み","む","め"
 "も","や","ゆ","よ","ら","り","る","れ","ろ","わ","ゐ","ゑ","を","ん","ゝ"]
 
@@ -105,7 +105,7 @@ def train_cnn(args):
             epochs=args.epochs,
             verbose=1,
             validation_data=(x_test, y_test),
-            callbacks=[KmnistCallback(), WandbCallback(data_type="image", labels=LABELS)])
+            callbacks=[KmnistCallback(), WandbCallback(data_type="image", labels=LABELS_10)])
 
   train_score = model.evaluate(x_train, y_train, verbose=0)
   test_score = model.evaluate(x_test, y_test, verbose=0)
