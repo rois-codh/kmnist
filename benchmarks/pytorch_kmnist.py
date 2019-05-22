@@ -1,6 +1,6 @@
-# cnn_kmnist.py
+# pytorch_kmnist.py
 #----------------
-# Train a small CNN to identify 10 Japanese characters in classical script
+# Train a small CNN in Pytorch to identify 10 Japanese characters in classical script
 # Based on MNIST CNN from wandb pytorch examples
 # https://github.com/wandb/examples/blob/master/pytorch-cnn-fashion/train.py
 

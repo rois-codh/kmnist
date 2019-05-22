@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # cnn_kmnist.py
 #----------------
 # Train a small CNN to identify 10 Japanese characters in classical script
