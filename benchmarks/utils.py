@@ -10,10 +10,10 @@ class KmnistCallback(Callback):
   def on_epoch_end(self, epoch, logs={}):
     if "val_accuracy" in logs:
         # latest version of tensorflow
-        wandb.log({"kmnist_val_acc" : logs["val_accuracy"]})
+        wandb.log({"kmnist_val_acc" : logs["val_accuracy"]}, commit=False)
     elif "val_acc" in logs:
         # older version of tensorflow
-        wandb.log({"kmnist_val_acc" : logs["val_acc"]})
+        wandb.log({"kmnist_val_acc" : logs["val_acc"]}, commit=False)
     else:
         raise Exception("Keras logs object missing validation accuracy")
 
