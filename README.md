@@ -21,7 +21,7 @@ If you use any of the Kuzushiji datasets in your work, we would appreciate a ref
 }
 ```
 ## News and Updates
-**IMPORTANT** If you downloaded the KMNIST and K49 datasets before **5 February 2019**, please kindly download the dataset and run your code again. We fixed minor bugs due to image processing and it might slightly change the result number. Thank you for your coorporation.
+**IMPORTANT:** If you downloaded the KMNIST or K49 dataset before **5 February 2019**, please re-download the dataset and run your code again. We fixed minor image processing bugs and released an updated version, we find that the updated version gives slightly better performance. Thanks to [#1](https://github.com/rois-codh/kmnist/issues/1) and [#5](https://github.com/rois-codh/kmnist/issues/5) for bringing this to our attention.
 
 ## The Dataset
 
@@ -91,13 +91,15 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 
 |Model                            | MNIST | Kuzushiji-MNIST | Kuzushiji-49 | Credit
 |---------------------------------|-------|--------|-----|---|
-|[4-Nearest Neighbour Baseline](benchmarks/kuzushiji_mnist_knn.py)     |97.14% | 92.10% | 86.01%|
-|[Tuned SVM (RBF kernel)](https://github.com/rois-codh/kmnist/issues/3) | 98.57% | 92.82% | | [TomZephire](https://github.com/TomZephire)
-|[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 95.12% |89.25%|
-|PreActResNet-18                  |99.56% | 97.82% |96.64%|
-|PreActResNet-18 + Input Mixup    |99.54% | 98.41% |97.04%|
-|PreActResNet-18 + Manifold Mixup |99.54% | 98.83% | **97.33%** |
-|[ResNet18 + VGG Ensemble](https://github.com/ranihorev/Kuzushiji_MNIST) | **99.60%** | **98.90%** | | [Rani Horev](https://twitter.com/HorevRani)
+|[4-Nearest Neighbour Baseline](benchmarks/kuzushiji_mnist_knn.py)     |97.14% | 92.10% | 86.01%\* |
+|[Tuned SVM (RBF kernel)](https://github.com/rois-codh/kmnist/issues/3) | 98.57% | 92.82%\* |  85.61%\* | [TomZephire](https://github.com/TomZephire)
+|[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 95.12%\* | 89.25%\* |
+|PreActResNet-18                  |99.56% | 97.82%\* |96.64%\*|
+|PreActResNet-18 + Input Mixup    |99.54% | 98.41%\* |97.04%\*|
+|PreActResNet-18 + Manifold Mixup |99.54% | 98.83%\* | **97.33%\*** |
+|[ResNet18 + VGG Ensemble](https://github.com/ranihorev/Kuzushiji_MNIST) | **99.60%\*** | **98.90%\*** | | [Rani Horev](https://twitter.com/HorevRani)
+
+_\* These results were obtained using an old version of the dataset, which gave slightly lower performance numbers_
 
 For MNIST and Kuzushiji-MNIST we use a standard accuracy metric, while Kuzushiji-49 is evaluated using balanced accuracy (so that all classes have equal weight).
 
