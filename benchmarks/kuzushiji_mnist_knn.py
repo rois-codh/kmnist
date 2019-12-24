@@ -1,5 +1,5 @@
 # kNN with neighbors=4 benchmark for Kuzushiji-MNIST
-# Acheives 97.4% test accuracy
+# Acheives 92.10% test accuracy
 
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
