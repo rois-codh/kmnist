@@ -90,13 +90,14 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |[4-Nearest Neighbour Baseline](benchmarks/kuzushiji_mnist_knn.py)     |97.14% | 92.10% | 86.01%\* |
 |[PCA + 4-kNN](https://github.com/rois-codh/kmnist/issues/10) | | 93.98% | | [dzisandy](https://github.com/dzisandy)
 |[Tuned SVM (RBF kernel)](https://github.com/rois-codh/kmnist/issues/3) | 98.57% | 92.82%\* |  85.61%\* | [TomZephire](https://github.com/TomZephire)
-|[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 95.12%\* | 89.25%\* |
+|[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 94.63% | 89.36% |
 |PreActResNet-18                  |99.56% | 97.82%\* |96.64%\*|
 |PreActResNet-18 + Input Mixup    |99.54% | 98.41%\* |97.04%\*|
 |PreActResNet-18 + Manifold Mixup |99.54% | 98.83%\* | 97.33%\* |
-|[ResNet18 + VGG Ensemble](https://github.com/ranihorev/Kuzushiji_MNIST) | **99.60%** | **98.90%\*** | | [Rani Horev](https://twitter.com/HorevRani)
+|[ResNet18 + VGG Ensemble](https://github.com/ranihorev/Kuzushiji_MNIST) | 99.60% | 98.90%\* | | [Rani Horev](https://twitter.com/HorevRani)
 |[DenseNet-100 (k=12)](https://github.com/kurapan/pytorch_image_classification) | | | 97.32% | [Jan Zdenek](https://github.com/kurapan)
 |[Shake-Shake-26 2x96d (cutout 14)](https://github.com/kurapan/pytorch_image_classification) | | | **98.29%** | [Jan Zdenek](https://github.com/kurapan)
+|[shake-shake-26 2x96d (S-S-I), Cutout 14](https://github.com/hysts/pytorch_image_classification#results-on-kuzushiji-mnist) | **99.76%** | **99.34%\*** | | [hysts](https://github.com/hysts)
 
 _\* These results were obtained using an old version of the dataset, which gave slightly lower performance numbers_
 
