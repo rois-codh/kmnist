@@ -74,7 +74,20 @@ Kuzushiji-49 contains 270,912 images spanning 49 classes, and is an extension of
 
 Mapping from class indices to characters: [k49_classmap.csv](http://codh.rois.ac.jp/kmnist/dataset/k49/k49_classmap.csv) (1KB)
 
-We recommend using balanced accuracy on the test set for evaluating on Kuzushiji-49.
+We recommend using **balanced accuracy** on the test set for evaluating on Kuzushiji-49.  
+We use the following implementation of balanced accuracy:
+```python
+p_test = # Model predictions of class index
+y_test = # Ground truth class indices
+
+accs = []
+for cls in range(49):
+  mask = (y_test == cls)
+  cls_acc = (p_test == cls)[mask].mean() # Accuracy for rows of class cls
+  accs.append(cls_acc)
+  
+accs = np.mean(accs) # Final balanced accuracy
+```
 
 ### Kuzushiji-Kanji
 
@@ -110,10 +123,6 @@ Both the dataset itself and the contents of this repo are licensed under a permi
 
 "KMNIST Dataset" (created by CODH), adapted from "Kuzushiji Dataset" 
 (created by NIJL and others), doi:10.20676/00000341
-
-
-
-
 
 ## Related datasets
 
