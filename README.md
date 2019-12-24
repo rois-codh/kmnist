@@ -3,23 +3,6 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)  
 📚 [Read the paper](https://arxiv.org/abs/1812.01718) to learn more about Kuzushiji, the datasets and our motivations for making them!
 
-## Citing Kuzushiji-MNIST
-
-If you use any of the Kuzushiji datasets in your work, we would appreciate a reference to our paper:
-
-**Deep Learning for Classical Japanese Literature. Tarin Clanuwat et al. [arXiv:1812.01718](https://arxiv.org/abs/1812.01718)**
-
-```latex
-@online{clanuwat2018deep,
-  author       = {Tarin Clanuwat and Mikel Bober-Irizar and Asanobu Kitamoto and Alex Lamb and Kazuaki Yamamoto and David Ha},
-  title        = {Deep Learning for Classical Japanese Literature},
-  date         = {2018-12-03},
-  year         = {2018},
-  eprintclass  = {cs.CV},
-  eprinttype   = {arXiv},
-  eprint       = {cs.CV/1812.01718},
-}
-```
 ## News and Updates
 **IMPORTANT:** If you downloaded the KMNIST or K49 dataset before **5 February 2019**, please re-download the dataset and run your code again. We fixed minor image processing bugs and released an updated version, we find that the updated version gives slightly better performance. Thanks to [#1](https://github.com/rois-codh/kmnist/issues/1) and [#5](https://github.com/rois-codh/kmnist/issues/5) for bringing this to our attention.
 
@@ -116,6 +99,24 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 _\* These results were obtained using an old version of the dataset, which gave slightly lower performance numbers_
 
 For MNIST and Kuzushiji-MNIST we use a standard accuracy metric, while Kuzushiji-49 is evaluated using balanced accuracy (so that all classes have equal weight).
+
+## Citing Kuzushiji-MNIST
+
+If you use any of the Kuzushiji datasets in your work, we would appreciate a reference to our paper:
+
+**Deep Learning for Classical Japanese Literature. Tarin Clanuwat et al. [arXiv:1812.01718](https://arxiv.org/abs/1812.01718)**
+
+```latex
+@online{clanuwat2018deep,
+  author       = {Tarin Clanuwat and Mikel Bober-Irizar and Asanobu Kitamoto and Alex Lamb and Kazuaki Yamamoto and David Ha},
+  title        = {Deep Learning for Classical Japanese Literature},
+  date         = {2018-12-03},
+  year         = {2018},
+  eprintclass  = {cs.CV},
+  eprinttype   = {arXiv},
+  eprint       = {cs.CV/1812.01718},
+}
+```
 
 ## License
 
