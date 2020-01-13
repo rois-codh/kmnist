@@ -88,7 +88,7 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |Model                            | MNIST | Kuzushiji-MNIST | Kuzushiji-49 | Credit
 |---------------------------------|-------|--------|-----|---|
 |[4-Nearest Neighbour Baseline](benchmarks/kuzushiji_mnist_knn.py)     |97.14% | 92.10% | 83.65% |
-|[PCA + 4-kNN](https://github.com/rois-codh/kmnist/issues/10) | | 93.98% | 86.80% | [dzisandy](https://github.com/dzisandy)
+|[PCA + 4-kNN](https://github.com/rois-codh/kmnist/issues/10) | 97.76% | 93.98% | 86.80% | [dzisandy](https://github.com/dzisandy)
 |[Tuned SVM (RBF kernel)](https://github.com/rois-codh/kmnist/issues/3) | 98.57% | 92.82%\* |  85.61%\* | [TomZephire](https://github.com/TomZephire)
 |[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 94.63% | 89.36% |
 |PreActResNet-18                  |99.56% | 97.82%\* |96.64%\*|
