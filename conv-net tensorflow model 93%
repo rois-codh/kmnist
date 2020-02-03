@@ -1,0 +1,101 @@
+###########################
+#KMNIST49 CNN model
+#by Victor Hofstetter
+#02/02/2020
+###########################
+
+
+import tensorflow as tf
+import numpy as np
+import matplotlib.pyplot as plt
+
+def balanced_accuracy(test_labels, predictions, outputs):
+    totals = []
+    for cls in range(outputs):
+        total = 0
+        for i in test_labels:
+            if i == cls:
+                total = total + 1
+        totals.append(total)
+
+    hits = []
+    for cls in range(outputs):
+        total_hits = 0
+        for i in range(0, test_labels.shape[0]):
+            if test_labels[i] == cls == np.argmax(predictions[i]):
+                total_hits = total_hits + 1
+        hits.append(total_hits)
+
+    accuracy_list = []
+    for i in range(0, len(hits)):
+        accuracy = hits[i] / totals[i]
+        accuracy_list.append(accuracy)
+
+    print(f'The balanced accuracy is: {np.mean(accuracy_list)}')
+
+train_data = np.load('k49-train-imgs.npz')['arr_0']
+train_labels = np.load('k49-train-labels.npz')['arr_0']
+test_data = np.load('k49-test-imgs.npz')['arr_0']
+test_labels = np.load('k49-test-labels.npz')['arr_0']
+
+train_data1 = tf.keras.utils.normalize(train_data, axis=1)
+test_data1 = tf.keras.utils.normalize(test_data, axis=1)
+
+train_data = train_data1.reshape((train_data.shape[0], train_data.shape[1], train_data.shape[2], 1))
+test_data = test_data1.reshape((test_data.shape[0], test_data.shape[1], test_data.shape[2], 1))
+
+train_dataset = tf.data.Dataset.from_tensor_slices((train_data, train_labels))
+test_dataset = tf.data.Dataset.from_tensor_slices((test_data, test_labels))
+
+#outlining number of validation samples (picked 8% of training data)
+num_validation_samples = 0.08 * train_data.shape[0]
+num_validation_samples = tf.cast(num_validation_samples, tf.int64)
+
+#isolating test samples
+num_test_samples = test_data.shape[0]
+num_test_samples = tf.cast(num_test_samples, tf.int64)
+
+#setting buffer size and shuffling training data
+BUFFER_SIZE = 10000
+train_dataset = train_dataset.shuffle(BUFFER_SIZE)
+#extracting validation data from grouping into own var
+validation_dataset = train_dataset.take(num_validation_samples)
+#excluding validation data from grouping and defining as training data
+train_dataset = train_dataset.skip(num_validation_samples)
+
+#setting batch size
+BATCH_SIZE = 128
+train_dataset = train_dataset.batch(BATCH_SIZE)
+validation_dataset = validation_dataset.batch(num_validation_samples)
+test_dataset = test_dataset.batch(num_test_samples)
+
+#separating validation data into inputs and targets
+validation_inputs, validation_targets = next(iter(validation_dataset))
+
+input_size = 784
+output_size = 49
+standard_hidden_layer_width = 512
+NUM_EPOCHS = 100
+VALIDATION_STEPS = num_validation_samples // BATCH_SIZE
+early_stopping = tf.keras.callbacks.EarlyStopping(patience=2)
+reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=5, min_lr=0.001)
+
+model = tf.keras.Sequential([
+                            tf.keras.layers.Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
+                            tf.keras.layers.MaxPooling2D(2, 2),
+                            tf.keras.layers.Conv2D(64, (3,3), activation='relu'),
+                            tf.keras.layers.MaxPooling2D(2,2),
+                            tf.keras.layers.Dropout(0.25),
+                            tf.keras.layers.Flatten(),
+                            tf.keras.layers.Dense(standard_hidden_layer_width, activation='relu'),
+                            tf.keras.layers.Dense(output_size, activation='softmax')
+                            ])
+
+model.compile(optimizer='Adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+model.fit(train_dataset, epochs=NUM_EPOCHS, callbacks=[reduce_lr], validation_data=(validation_inputs, validation_targets), validation_steps=VALIDATION_STEPS, verbose=1)
+
+
+predictions = model.predict([test_data])
+
+balanced_accuracy(test_labels, predictions, output_size)
