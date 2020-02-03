@@ -91,6 +91,7 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |[PCA + 4-kNN](https://github.com/rois-codh/kmnist/issues/10) | 97.76% | 93.98% | 86.80% | [dzisandy](https://github.com/dzisandy)
 |[Tuned SVM (RBF kernel)](https://github.com/rois-codh/kmnist/issues/3) | 98.57% | 92.82%\* |  85.61%\* | [TomZephire](https://github.com/TomZephire)
 |[Keras Simple CNN Benchmark](benchmarks/kuzushiji_mnist_cnn.py)       |99.06% | 94.63% | 89.36% |
+|[TensorFlow Simple CNN](https://github.com/VicHofs/kmnist/blob/master/k49%20cnn%20notebook.ipynb)| | | 93.00% | [Victor Hofstetter](https://github.com/VicHofs)
 |PreActResNet-18                  |99.56% | 97.82%\* |96.64%\*|
 |PreActResNet-18 + Input Mixup    |99.54% | 98.41%\* |97.04%\*|
 |PreActResNet-18 + Manifold Mixup |99.54% | 98.83%\* | 97.33%\* |
