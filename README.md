@@ -130,4 +130,4 @@ Both the dataset itself and the contents of this repo are licensed under a permi
 
 ## Related datasets
 
-Kuzushiji Dataset http://codh.rois.ac.jp/char-shape/ offers 4,645 character types and 684,165 character images with CSV files containing the bounding box of characters on the original page images. At this moment, the description of the dataset is available only in Japanese, but the English version will be available soon. 
+Kuzushiji Dataset http://codh.rois.ac.jp/char-shape/ offers 4,328 character types and 1,086,326 character images (November 2019) with CSV files containing the bounding box of characters on the original page images. At this moment, the description of the dataset is available only in Japanese, but the English version will be available soon. 
