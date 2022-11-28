@@ -17,7 +17,6 @@ import torch.backends.cudnn as cudnn
 from dataset.KMNIST import get_train_dataloader, get_validation_dataloader, get_test_dataloader
 
 # from utils.Evaluation import compute_AUCs, compute_ROCCurve
-from utils.BinaryFocalLoss import BinaryFocalLoss
 from utils.init import *
 from utils.logger import get_logger
 from utils.evaluation import avg_accuracy, class_accuracy, visualize_val_accuracy, visualize_train_loss, \
