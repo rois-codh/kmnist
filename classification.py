@@ -1,9 +1,4 @@
 # encoding: utf-8
-"""
-Training implementation
-Author: Ming Zeng
-Update time: 28/11/2022
-"""
 import argparse
 import numpy as np
 import torch
