@@ -2,6 +2,7 @@ from nets import ResNet
 import timm
 from config import *
 
+
 def get_model(model):
     if model == 'ResNet-18':
         return ResNet.resnet18(pretrained=True, t_num_classes=config['N_CLASSES'])  # initialize model

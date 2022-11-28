@@ -2,10 +2,8 @@
 """
 Training implementation
 Author: Ming Zeng
-Update time: 25/11/2022
+Update time: 28/11/2022
 """
-import sys
-import time
 import argparse
 import numpy as np
 import torch
@@ -13,17 +11,12 @@ import torch.nn as nn
 from torch.optim import lr_scheduler
 import torch.optim as optim
 import torch.backends.cudnn as cudnn
-# self-defined
 from dataset.KMNIST import get_train_dataloader, get_validation_dataloader, get_test_dataloader
-
-# from utils.Evaluation import compute_AUCs, compute_ROCCurve
+# self-defined
 from utils.init import *
 from utils.logger import get_logger
 from utils.evaluation import avg_accuracy, class_accuracy, visualize_val_accuracy, visualize_train_loss, \
     visualize_confusion_matrix
-# from utils.Evaluation import count_bytes
-from sklearn.metrics import recall_score, f1_score, classification_report, confusion_matrix, ConfusionMatrixDisplay
-
 from config import *
 
 

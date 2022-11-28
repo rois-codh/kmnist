@@ -2,6 +2,7 @@ import sys
 import logging
 import os
 
+
 def get_logger(exp_dir):
     """
     creates logger instance. writing out info to file and to terminal.
@@ -20,6 +21,7 @@ def get_logger(exp_dir):
     logger.addHandler(ColorHandler())
     logger.propagate = False
     return logger
+
 
 class _AnsiColorizer(object):
     """

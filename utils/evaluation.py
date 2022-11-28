@@ -28,28 +28,29 @@ def class_accuracy(confusion_matrix, class_id):
     return accuracy
 
 
-def visualize_train_loss(train_loss,logger,log_img_path):
+def visualize_train_loss(train_loss, logger, log_img_path):
     plt.xlabel('Train Loss')
     plt.plot(train_loss)
-    path =log_img_path+ 'train_loss.png'
+    path = log_img_path + 'train_loss.png'
     plt.savefig(path)
     plt.clf()
     logger.info('Train Loss Visualization is saved to ' + path)
 
-def visualize_val_accuracy(val_acc,logger,log_img_path):
+
+def visualize_val_accuracy(val_acc, logger, log_img_path):
     plt.xlabel('Validation Accuracy')
     plt.plot(val_acc)
-    path=log_img_path+ 'val_acc.png'
+    path = log_img_path + 'val_acc.png'
     plt.savefig(path)
     plt.clf()
     logger.info('Validation Accuracy Visualization is saved to ' + path)
 
-def visualize_confusion_matrix(gt,pred,logger,log_img_path):
+
+def visualize_confusion_matrix(gt, pred, logger, log_img_path):
     cm = confusion_matrix(gt, pred)
     disp = ConfusionMatrixDisplay(cm).plot()
-    path = log_img_path+ 'confusion_matrix.png'
+    path = log_img_path + 'confusion_matrix.png'
     plt.savefig(path)
     plt.clf()
     logger.info('Confusion Matrix Visualization is saved to ' + path)
     return cm
-

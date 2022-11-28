@@ -1,0 +1,118 @@
+********************begin training!********************
+Eopch:     1 train loss = 1.474743
+Eopch:     1 valuation loss = 0.159035, ACC = 0.950333
+ Epoch: 1 model has been already save!
+Training epoch: 1 completed.
+Eopch:     2 train loss = 0.108675
+Eopch:     2 valuation loss = 0.088274, ACC = 0.973833
+ Epoch: 2 model has been already save!
+Training epoch: 2 completed.
+Eopch:     3 train loss = 0.066299
+Eopch:     3 valuation loss = 0.085802, ACC = 0.978167
+ Epoch: 3 model has been already save!
+Training epoch: 3 completed.
+Eopch:     4 train loss = 0.053803
+Eopch:     4 valuation loss = 0.069033, ACC = 0.982500
+ Epoch: 4 model has been already save!
+Training epoch: 4 completed.
+Eopch:     5 train loss = 0.053161
+Eopch:     5 valuation loss = 0.064765, ACC = 0.983000
+ Epoch: 5 model has been already save!
+Training epoch: 5 completed.
+Eopch:     6 train loss = 0.039282
+Eopch:     6 valuation loss = 0.076107, ACC = 0.984500
+ Epoch: 6 model has been already save!
+Training epoch: 6 completed.
+Eopch:     7 train loss = 0.048531
+Eopch:     7 valuation loss = 0.070968, ACC = 0.980333
+Training epoch: 7 completed.
+Eopch:     8 train loss = 0.046734
+Eopch:     8 valuation loss = 0.101906, ACC = 0.974667
+Training epoch: 8 completed.
+Eopch:     9 train loss = 0.057909
+Eopch:     9 valuation loss = 0.091453, ACC = 0.982500
+Training epoch: 9 completed.
+Eopch:    10 train loss = 0.068523
+Eopch:    10 valuation loss = 0.100253, ACC = 0.980667
+Training epoch: 10 completed.
+Eopch:    11 train loss = 0.093497
+Eopch:    11 valuation loss = 0.107574, ACC = 0.977167
+Training epoch: 11 completed.
+Eopch:    12 train loss = 0.044268
+Eopch:    12 valuation loss = 0.078949, ACC = 0.983667
+Training epoch: 12 completed.
+Eopch:    13 train loss = 0.623085
+Eopch:    13 valuation loss = 0.157252, ACC = 0.978500
+Training epoch: 13 completed.
+Eopch:    14 train loss = 0.037385
+Eopch:    14 valuation loss = 0.110624, ACC = 0.982500
+Training epoch: 14 completed.
+Eopch:    15 train loss = 0.020321
+Eopch:    15 valuation loss = 0.297462, ACC = 0.973000
+Training epoch: 15 completed.
+Eopch:    16 train loss = 0.052521
+Eopch:    16 valuation loss = 0.225200, ACC = 0.980667
+Training epoch: 16 completed.
+Eopch:    17 train loss = 0.126149
+Eopch:    17 valuation loss = 0.223529, ACC = 0.979167
+Training epoch: 17 completed.
+Eopch:    18 train loss = 0.064713
+Eopch:    18 valuation loss = 0.177399, ACC = 0.983833
+Training epoch: 18 completed.
+Eopch:    19 train loss = 0.114511
+Eopch:    19 valuation loss = 0.253915, ACC = 0.980500
+Training epoch: 19 completed.
+Eopch:    20 train loss = 0.074080
+Eopch:    20 valuation loss = 0.226443, ACC = 0.979333
+Training epoch: 20 completed.
+Eopch:    21 train loss = 0.080519
+Eopch:    21 valuation loss = 0.377549, ACC = 0.975333
+Training epoch: 21 completed.
+Eopch:    22 train loss = 0.105814
+Eopch:    22 valuation loss = 0.296062, ACC = 0.980833
+Training epoch: 22 completed.
+Eopch:    23 train loss = 0.117329
+Eopch:    23 valuation loss = 0.336344, ACC = 0.980333
+Training epoch: 23 completed.
+Eopch:    24 train loss = 0.048457
+Eopch:    24 valuation loss = 0.182534, ACC = 0.983333
+Training epoch: 24 completed.
+Eopch:    25 train loss = 0.110891
+Eopch:    25 valuation loss = 0.194350, ACC = 0.984167
+Training epoch: 25 completed.
+Eopch:    26 train loss = 0.093364
+Eopch:    26 valuation loss = 0.332007, ACC = 0.977000
+Training epoch: 26 completed.
+Eopch:    27 train loss = 0.079099
+Eopch:    27 valuation loss = 0.309876, ACC = 0.980833
+Training epoch: 27 completed.
+Eopch:    28 train loss = 0.097644
+Eopch:    28 valuation loss = 0.295460, ACC = 0.981500
+Training epoch: 28 completed.
+Eopch:    29 train loss = 0.102000
+Eopch:    29 valuation loss = 0.293703, ACC = 0.982833
+Training epoch: 29 completed.
+Eopch:    30 train loss = 0.080658
+Eopch:    30 valuation loss = 0.261712, ACC = 0.983833
+Training epoch: 30 completed.
+Train Loss Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResMLP-12/train_loss.png
+Validation Accuracy Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResMLP-12/val_acc.png
+Train Loss:
+1.474743462770171,0.1086748668005893,0.06629924054679094,0.05380273102917496,0.05316117941462244,0.0392818591715359,0.04853067634755173,0.04673448809202136,0.057909078096927434,0.06852341221147061,0.09349699254253382,0.044267768561718206,0.6230845790207216,0.03738521428460376,0.020321206379019432,0.052520529435868546,0.12614923562628944,0.0647127392301931,0.11451104171100272,0.074079771555273,0.0805192425736352,0.1058142589081407,0.11732911902895017,0.04845723011321656,0.11089138890054262,0.09336423637522687,0.0790989557700349,0.0976435722336647,0.10200038970579342,0.08065755875858951
+Validation Accuracy:
+0.9503333333333334,0.9738333333333333,0.9781666666666666,0.9825,0.983,0.9845,0.9803333333333333,0.9746666666666667,0.9825,0.9806666666666667,0.9771666666666666,0.9836666666666667,0.9785,0.9825,0.973,0.9806666666666667,0.9791666666666666,0.9838333333333333,0.9805,0.9793333333333333,0.9753333333333334,0.9808333333333333,0.9803333333333333,0.9833333333333333,0.9841666666666666,0.977,0.9808333333333333,0.9815,0.9828333333333333,0.9838333333333333
+=> loaded model checkpoint: /userhome/cs2/mingzeng/codes/kmnist/models/ResMLP-12.pkl
+******* begin testing!*********
+Test Averaged Loss = 0.263454
+Test Averaged Accuracy = 0.948300
+Confusion Matrix Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResMLP-12/confusion_matrix.png
+Class:     0      Accuracy = 0.991500
+Class:     1      Accuracy = 0.990000
+Class:     2      Accuracy = 0.978500
+Class:     3      Accuracy = 0.991500
+Class:     4      Accuracy = 0.988800
+Class:     5      Accuracy = 0.987100
+Class:     6      Accuracy = 0.989700
+Class:     7      Accuracy = 0.994500
+Class:     8      Accuracy = 0.991100
+Class:     9      Accuracy = 0.993900

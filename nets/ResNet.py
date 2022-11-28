@@ -8,7 +8,6 @@ import torch.utils.model_zoo as model_zoo
 __all__ = ['ResNet', 'resnet18', 'resnet34', 'resnet50', 'resnet101',
            'resnet152']
 
-
 model_urls = {
     'resnet18': 'https://download.pytorch.org/models/resnet18-5c106cde.pth',
     'resnet34': 'https://download.pytorch.org/models/resnet34-333f7ec4.pth',
@@ -109,7 +108,7 @@ class ResNet(nn.Module):
         self.layer2 = self._make_layer(block, 128, layers[1], stride=2)
         self.layer3 = self._make_layer(block, 256, layers[2], stride=2)
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
-        self.avgpool = nn.AdaptiveAvgPool2d((1,1))
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
         self.fc = nn.Linear(512 * block.expansion, num_classes)
 
         for m in self.modules():
@@ -152,9 +151,10 @@ class ResNet(nn.Module):
         x = x.view(x.size(0), -1)
         x = self.fc(x)
 
-        return torch.sigmoid(x),y
+        return torch.sigmoid(x), y
 
-def resnet18(t_num_classes=46,pretrained=False, **kwargs):
+
+def resnet18(t_num_classes=46, pretrained=False, **kwargs):
     """Constructs a ResNet-18 model.
     Args:
         pretrained (bool): If True, returns a model pre-trained on ImageNet
@@ -186,7 +186,7 @@ def resnet50(t_num_classes=5, pretrained=False, **kwargs):
     model = ResNet(Bottleneck, [3, 4, 6, 3], **kwargs)
     if pretrained:
         model.load_state_dict(model_zoo.load_url(model_urls['resnet50']))
-        num_fc_ftr = model.fc.in_features #overwrite the fc layer
+        num_fc_ftr = model.fc.in_features  # overwrite the fc layer
         model.fc = torch.nn.Linear(num_fc_ftr, t_num_classes)
     return model
 

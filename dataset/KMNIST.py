@@ -22,10 +22,8 @@ TRAIN_IMAGE_NUM = config['TRAIN_NUM']
 class MyDataset(Dataset):
     def __init__(self, data, target, transform=None):
         self.data = torch.from_numpy(data).float()
-        # print(self.data.shape)
         self.data = self.data.unsqueeze(1)
         self.data = torch.cat((self.data, self.data, self.data), 1)
-        # print("Now",self.data.shape)
         self.target = torch.from_numpy(target).long()
         self.transform = transform
 
@@ -71,7 +69,6 @@ def get_test_dataloader(batch_size, shuffle, num_workers):
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers)
 
     return test_loader
-
 
 # if __name__ == "__main__":
 #     # split trainset\valset\testset
