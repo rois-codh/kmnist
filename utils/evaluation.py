@@ -10,7 +10,7 @@ def avg_accuracy(gt, pred):
     return acc
 
 
-def class_accuracy(confusion_matrix, class_id):
+def class_metric(confusion_matrix, class_id):
     """
     confusion matrix of multi-class classification
 
@@ -24,8 +24,10 @@ def class_accuracy(confusion_matrix, class_id):
     TN = np.sum(confusion_matrix) - TP - FN - FP
 
     accuracy = (TP + TN) / (TP + FP + FN + TN)
-
-    return accuracy
+    precision = TP / (TP + FP)
+    recall = TP / (TP + FN)
+    f_score = 2 * precision * recall / (precision + recall)
+    return accuracy, precision, recall, f_score
 
 
 def visualize_train_loss(train_loss, logger, log_img_path):

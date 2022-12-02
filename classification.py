@@ -10,7 +10,7 @@ from dataset.KMNIST import get_train_dataloader, get_validation_dataloader, get_
 # self-defined
 from utils.init import *
 from utils.logger import get_logger
-from utils.evaluation import avg_accuracy, class_accuracy, visualize_val_accuracy, visualize_train_loss, \
+from utils.evaluation import avg_accuracy, class_metric, visualize_val_accuracy, visualize_train_loss, \
     visualize_confusion_matrix
 from config import *
 
@@ -84,6 +84,11 @@ class Classification:
         return loss, acc
 
     def train_model(self):
+        # if os.path.isfile(self.ckpt_path):
+        #     checkpoint = torch.load(self.ckpt_path)
+        #     self.model.load_state_dict(checkpoint)
+        #     logger.info("=> loaded model checkpoint: " + self.ckpt_path)
+
         logger.info('********************begin training!********************')
         accuracy_max = 0.0
         for epoch in range(self.max_epoch):
@@ -132,7 +137,9 @@ class Classification:
         cm = visualize_confusion_matrix(gt, pred, logger, self.log_img_path)
 
         for i in range(self.class_num):
-            logger.info("Class: %5d      Accuracy = %.6f" % (i, class_accuracy(cm, i)))
+            acc, precision, recall, f_score = class_metric(cm, i)
+            logger.info("Class: %5d      Accuracy = %.6f    Precision = %.6f    Recall = %.6f   f-score = %.6f" % (
+            i, acc, precision, recall, f_score))
 
 
 if __name__ == '__main__':
@@ -141,8 +148,8 @@ if __name__ == '__main__':
     parser.add_argument('--model', type=str, default='ResMLP-12')
     parser.add_argument('--gpu', type=str, default=config['CUDA_VISIBLE_DEVICES'])
     parser.add_argument('--train_batch', type=int, default=64)
-    parser.add_argument('--test_batch', type=int, default=1000)
-    parser.add_argument('--epoch', type=int, default=30)
+    parser.add_argument('--test_batch', type=int, default=500)
+    parser.add_argument('--epoch', type=int, default=50)
     parser.add_argument('--train', type=int, default=0)
     parser.add_argument('--test', type=int, default=1)
     parser.add_argument('--class_num', type=int, default=None)
