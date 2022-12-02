@@ -105,13 +105,13 @@ Validation Accuracy:
 Test Averaged Loss = 0.205754
 Test Averaged Accuracy = 0.971000
 Confusion Matrix Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResMLP-24/confusion_matrix.png
-Class:     0      Accuracy = 0.995300
-Class:     1      Accuracy = 0.994200
-Class:     2      Accuracy = 0.991800
-Class:     3      Accuracy = 0.996100
-Class:     4      Accuracy = 0.991200
-Class:     5      Accuracy = 0.995000
-Class:     6      Accuracy = 0.989400
-Class:     7      Accuracy = 0.995600
-Class:     8      Accuracy = 0.996000
-Class:     9      Accuracy = 0.997400
+Class:     0      Accuracy = 0.995300    Precision = 0.965787    Recall = 0.988000   f-score = 0.976767
+Class:     1      Accuracy = 0.994200    Precision = 0.986570    Recall = 0.955000   f-score = 0.970528
+Class:     2      Accuracy = 0.991800    Precision = 0.980126    Recall = 0.937000   f-score = 0.958078
+Class:     3      Accuracy = 0.996100    Precision = 0.980020    Recall = 0.981000   f-score = 0.980510
+Class:     4      Accuracy = 0.991200    Precision = 0.957831    Recall = 0.954000   f-score = 0.955912
+Class:     5      Accuracy = 0.995000    Precision = 0.972167    Recall = 0.978000   f-score = 0.975075
+Class:     6      Accuracy = 0.989400    Precision = 0.913889    Recall = 0.987000   f-score = 0.949038
+Class:     7      Accuracy = 0.995600    Precision = 0.988753    Recall = 0.967000   f-score = 0.977755
+Class:     8      Accuracy = 0.996000    Precision = 0.983871    Recall = 0.976000   f-score = 0.979920
+Class:     9      Accuracy = 0.997400    Precision = 0.987000    Recall = 0.987000   f-score = 0.987000
