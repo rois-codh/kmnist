@@ -7,6 +7,7 @@ from torch.optim import lr_scheduler
 import torch.optim as optim
 import torch.backends.cudnn as cudnn
 from dataset.KMNIST import get_train_dataloader, get_validation_dataloader, get_test_dataloader
+import os
 # self-defined
 from utils.init import *
 from utils.logger import get_logger
