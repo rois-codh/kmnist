@@ -25,16 +25,16 @@ Available model names:
 ResMLP-12, ResMLP-24, ResNet-18, ResNet-34
 ```
 
-To test the model:
-
-```shell
-python classification.py --model [model name] --gpu [GPU No.]
-```
-
 To train the model:
 
 ```shell
 python classification.py --model [model name] --gpu [GPU No.] --train 1
+```
+
+To test the model:
+
+```shell
+python classification.py --model [model name] --gpu [GPU No.]
 ```
 
 Results are stored in `./log`
