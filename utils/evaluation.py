@@ -4,6 +4,10 @@ from sklearn.metrics import recall_score, f1_score, classification_report, confu
 
 
 def avg_accuracy(gt, pred):
+    """
+    gt: ground truth
+    pred: prediction
+    """
     correct_cnt = (pred == gt).sum()
     acc = correct_cnt * 1.0 / pred.shape[0]
     return acc
@@ -11,10 +15,8 @@ def avg_accuracy(gt, pred):
 
 def class_metric(confusion_matrix, class_id):
     """
-    confusion matrix of multi-class classification
-
+    confusion_matrix: confusion matrix of multi-class classification
     class_id: id of a particular class
-
     """
     confusion_matrix = np.float64(confusion_matrix)
     TP = confusion_matrix[class_id, class_id]
@@ -29,6 +31,7 @@ def class_metric(confusion_matrix, class_id):
     return accuracy, precision, recall, f_score
 
 
+# plot train loss
 def visualize_train_loss(train_loss, logger, log_img_path):
     plt.xlabel('Train Loss')
     plt.plot(train_loss)
@@ -38,6 +41,7 @@ def visualize_train_loss(train_loss, logger, log_img_path):
     logger.info('Train Loss Visualization is saved to ' + path)
 
 
+# plot validation accuracy
 def visualize_val_accuracy(val_acc, logger, log_img_path):
     plt.xlabel('Validation Accuracy')
     plt.plot(val_acc)
@@ -47,6 +51,7 @@ def visualize_val_accuracy(val_acc, logger, log_img_path):
     logger.info('Validation Accuracy Visualization is saved to ' + path)
 
 
+# plot confusion matrix
 def visualize_confusion_matrix(gt, pred, logger, log_img_path):
     cm = confusion_matrix(gt, pred)
     disp = ConfusionMatrixDisplay(cm).plot()

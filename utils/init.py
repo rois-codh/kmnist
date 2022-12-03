@@ -3,6 +3,7 @@ import timm
 from config import *
 
 
+# initialize model
 def get_model(model):
     if model == 'ResNet-18':
         return timm.create_model('resnet18', pretrained=True, num_classes=config['N_CLASSES'])

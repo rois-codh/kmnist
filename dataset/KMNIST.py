@@ -2,16 +2,11 @@ import torch
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
-from PIL import Image
-import os
-import pandas as pd
 import numpy as np
-import time
-import random
-from sklearn.model_selection import train_test_split
 
 from config import *
 
+# set dataset path
 PATH_TO_TRAIN_FILE = config['TRAIN_FILE']
 PATH_TO_TEST_FILE = config['TEST_FILE']
 PATH_TO_TRAIN_LABEL_FILE = config['TRAIN_LABEL']
@@ -19,6 +14,7 @@ PATH_TO_TEST_LABEL_FILE = config['TEST_LABEL']
 TRAIN_IMAGE_NUM = config['TRAIN_NUM']
 
 
+# load data
 class MyDataset(Dataset):
     def __init__(self, data, target, transform=None):
         self.data = torch.from_numpy(data).float()
@@ -40,10 +36,12 @@ class MyDataset(Dataset):
         return len(self.data)
 
 
+# preprocess images
 transform = transforms.Compose([transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
                                 transforms.Resize((config['TRAN_SIZE'], config['TRAN_SIZE']))])
 
 
+# configure dataloader for train data
 def get_train_dataloader(batch_size, shuffle, num_workers):
     train_images = np.load(PATH_TO_TRAIN_FILE)['arr_0'][:TRAIN_IMAGE_NUM]
     train_labels = np.load(PATH_TO_TRAIN_LABEL_FILE)['arr_0'][:TRAIN_IMAGE_NUM]
@@ -53,6 +51,7 @@ def get_train_dataloader(batch_size, shuffle, num_workers):
     return train_loader
 
 
+# configure dataloader for validation data
 def get_validation_dataloader(batch_size, shuffle, num_workers):
     val_images = np.load(PATH_TO_TRAIN_FILE)['arr_0'][TRAIN_IMAGE_NUM:]
     val_labels = np.load(PATH_TO_TRAIN_LABEL_FILE)['arr_0'][TRAIN_IMAGE_NUM:]
@@ -62,6 +61,7 @@ def get_validation_dataloader(batch_size, shuffle, num_workers):
     return val_loader
 
 
+# configure dataloader for test data
 def get_test_dataloader(batch_size, shuffle, num_workers):
     test_images = np.load(PATH_TO_TEST_FILE)['arr_0']
     test_labels = np.load(PATH_TO_TEST_LABEL_FILE)['arr_0']
@@ -69,12 +69,3 @@ def get_test_dataloader(batch_size, shuffle, num_workers):
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers)
 
     return test_loader
-
-# if __name__ == "__main__":
-#     # split trainset\valset\testset
-#
-#     # for debug
-#     dataloader_train = get_train_dataloader(batch_size=64)
-#     for batch_idx, (image, label) in enumerate(dataloader_train):
-#         print(label[0])
-#         break

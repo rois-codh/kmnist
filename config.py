@@ -1,5 +1,3 @@
-import os
-
 PROJECT_PATH = './'
 
 config = {
@@ -13,5 +11,5 @@ config = {
     'TRAN_SIZE': 224,
     'TRAN_CROP': 224,
     'N_CLASSES': 10,
-    'MODEL':'ResMLP-12'
+    'MODEL': 'ResMLP-12'
 }
