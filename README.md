@@ -44,7 +44,7 @@ pip install -U scikit-learn
 
 ## MLP/CNN Model
 
-**You will need GPU to run the following code.**
+**You will need GPU and PyTorch packages to run the following code.**
 
 **Results will be stored in `./log`**
 
