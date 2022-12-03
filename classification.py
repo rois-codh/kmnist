@@ -153,7 +153,7 @@ if __name__ == '__main__':
     parser.add_argument('--train', type=int, default=0)
     parser.add_argument('--test', type=int, default=1)
     parser.add_argument('--class_num', type=int, default=None)
-    parser.add_argument('--ckpt_path', type=str, default='/userhome/cs2/mingzeng/codes/kmnist/models/')
+    parser.add_argument('--ckpt_path', type=str, default='./models/')
 
     args = parser.parse_args()
     # set log

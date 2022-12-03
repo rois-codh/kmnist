@@ -1,6 +1,6 @@
 import os
 
-PROJECT_PATH = '/userhome/cs2/mingzeng/codes/kmnist/'
+PROJECT_PATH = './'
 
 config = {
     'LOG_PATH': PROJECT_PATH + 'log/',
@@ -12,5 +12,6 @@ config = {
     'CUDA_VISIBLE_DEVICES': "0",
     'TRAN_SIZE': 224,
     'TRAN_CROP': 224,
-    'N_CLASSES': 10
+    'N_CLASSES': 10,
+    'MODEL':'ResMLP-12'
 }

@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from config import *
 from sklearn.metrics import recall_score, f1_score, classification_report, confusion_matrix, ConfusionMatrixDisplay
 
 

@@ -4,9 +4,37 @@ This repository impletments the classification for [Kuzushiji-MNIST](https://git
 
 
 
-[Kuzushiji-MNIST](https://github.com/rois-codh/kmnist) is a drop-in replacement for the MNIST dataset (28x28 grayscale, 70,000 images), provided in the original MNIST format as well as a NumPy format. Since MNIST restricts us to 10 classes, we chose one character to represent each of the 10 rows of Hiragana when creating Kuzushiji-MNIST.
+## Download the dataset
 
-<p align="center">
-  <img src="images/kmnist_examples.png">
-  The 10 classes of Kuzushiji-MNIST, with the first column showing each character's modern hiragana counterpart.
-</p>
+```shell
+wget http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-train-imgs.npz
+wget http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-train-labels.npz
+wget http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-imgs.npz
+wget http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-labels.npz
+```
+
+
+
+## MLP/CNN Model
+
+**You will need GPU to run the following code.**
+
+Available model names:
+
+```
+ResMLP-12, ResMLP-24, ResNet-18, ResNet-34
+```
+
+To test the model:
+
+```shell
+python classification.py --model [model name] --gpu [GPU No.]
+```
+
+To train the model:
+
+```shell
+python classification.py --model [model name] --gpu [GPU No.] --train 1
+```
+
+Results are stored in `./log`
