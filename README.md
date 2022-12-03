@@ -19,6 +19,27 @@ wget http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-labels.npz
 
 
 
+## Visualization and Unsupervised Models
+
+**You will need install these packages to run the specific functions.**
+
+For basic functions, such as loading data and displaying images:
+
+```
+pip install numpy
+pip install matplotlib
+pip install seaborn
+pip install pandas
+```
+
+For Unsupervised Model, PCA and Evaluation:
+
+```
+pip install -U scikit-learn
+```
+
+
+
 ## MLP/CNN Model
 
 **You will need GPU to run the following code.**
