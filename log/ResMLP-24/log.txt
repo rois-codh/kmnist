@@ -1,0 +1,117 @@
+********************begin training!********************
+Eopch:     1 train loss = 0.258324
+Eopch:     1 valuation loss = 0.103075, ACC = 0.970500
+ Epoch: 1 model has been already save!
+Training epoch: 1 completed.
+Eopch:     2 train loss = 0.060491
+Eopch:     2 valuation loss = 0.055647, ACC = 0.983667
+ Epoch: 2 model has been already save!
+Training epoch: 2 completed.
+Eopch:     3 train loss = 0.039388
+Eopch:     3 valuation loss = 0.061271, ACC = 0.982000
+Training epoch: 3 completed.
+Eopch:     4 train loss = 0.034410
+Eopch:     4 valuation loss = 0.066298, ACC = 0.983500
+Training epoch: 4 completed.
+Eopch:     5 train loss = 0.024529
+Eopch:     5 valuation loss = 0.102639, ACC = 0.977667
+Training epoch: 5 completed.
+Eopch:     6 train loss = 0.024616
+Eopch:     6 valuation loss = 0.090551, ACC = 0.980000
+Training epoch: 6 completed.
+Eopch:     7 train loss = 0.063829
+Eopch:     7 valuation loss = 0.049286, ACC = 0.988833
+ Epoch: 7 model has been already save!
+Training epoch: 7 completed.
+Eopch:     8 train loss = 0.010175
+Eopch:     8 valuation loss = 0.084901, ACC = 0.983167
+Training epoch: 8 completed.
+Eopch:     9 train loss = 0.008173
+Eopch:     9 valuation loss = 0.066344, ACC = 0.988500
+Training epoch: 9 completed.
+Eopch:    10 train loss = 0.010041
+Eopch:    10 valuation loss = 0.081577, ACC = 0.986000
+Training epoch: 10 completed.
+Eopch:    11 train loss = 0.017877
+Eopch:    11 valuation loss = 0.096666, ACC = 0.984000
+Training epoch: 11 completed.
+Eopch:    12 train loss = 0.016719
+Eopch:    12 valuation loss = 0.072074, ACC = 0.985833
+Training epoch: 12 completed.
+Eopch:    13 train loss = 0.016574
+Eopch:    13 valuation loss = 0.046974, ACC = 0.988167
+Training epoch: 13 completed.
+Eopch:    14 train loss = 0.012572
+Eopch:    14 valuation loss = 0.078121, ACC = 0.982167
+Training epoch: 14 completed.
+Eopch:    15 train loss = 0.013178
+Eopch:    15 valuation loss = 0.101448, ACC = 0.981667
+Training epoch: 15 completed.
+Eopch:    16 train loss = 0.010542
+Eopch:    16 valuation loss = 0.068331, ACC = 0.991000
+ Epoch: 16 model has been already save!
+Training epoch: 16 completed.
+Eopch:    17 train loss = 0.008493
+Eopch:    17 valuation loss = 0.096219, ACC = 0.983833
+Training epoch: 17 completed.
+Eopch:    18 train loss = 0.013357
+Eopch:    18 valuation loss = 0.061578, ACC = 0.987333
+Training epoch: 18 completed.
+Eopch:    19 train loss = 0.009315
+Eopch:    19 valuation loss = 0.078054, ACC = 0.986833
+Training epoch: 19 completed.
+Eopch:    20 train loss = 0.006614
+Eopch:    20 valuation loss = 0.065001, ACC = 0.989833
+Training epoch: 20 completed.
+Eopch:    21 train loss = 0.009743
+Eopch:    21 valuation loss = 0.058913, ACC = 0.986833
+Training epoch: 21 completed.
+Eopch:    22 train loss = 0.004101
+Eopch:    22 valuation loss = 0.071325, ACC = 0.989000
+Training epoch: 22 completed.
+Eopch:    23 train loss = 0.011880
+Eopch:    23 valuation loss = 0.061699, ACC = 0.988000
+Training epoch: 23 completed.
+Eopch:    24 train loss = 0.005898
+Eopch:    24 valuation loss = 0.052160, ACC = 0.989667
+Training epoch: 24 completed.
+Eopch:    25 train loss = 0.007055
+Eopch:    25 valuation loss = 0.060927, ACC = 0.986500
+Training epoch: 25 completed.
+Eopch:    26 train loss = 0.006872
+Eopch:    26 valuation loss = 0.047085, ACC = 0.991167
+ Epoch: 26 model has been already save!
+Training epoch: 26 completed.
+Eopch:    27 train loss = 0.006201
+Eopch:    27 valuation loss = 0.062409, ACC = 0.989333
+Training epoch: 27 completed.
+Eopch:    28 train loss = 0.004974
+Eopch:    28 valuation loss = 0.079944, ACC = 0.989667
+Training epoch: 28 completed.
+Eopch:    29 train loss = 0.009411
+Eopch:    29 valuation loss = 0.058826, ACC = 0.988333
+Training epoch: 29 completed.
+Eopch:    30 train loss = 0.002585
+Eopch:    30 valuation loss = 0.071575, ACC = 0.986667
+Training epoch: 30 completed.
+Train Loss Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResMLP-24/train_loss.png
+Validation Accuracy Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResMLP-24/val_acc.png
+Train Loss:
+0.25832390663422583,0.06049111991284456,0.03938772366459338,0.03440955887405244,0.0245294870920013,0.024616345635608633,0.06382881039148937,0.010174585332210257,0.00817297156926667,0.010040507038089059,0.01787675555819019,0.01671852239838346,0.016574336527537304,0.012571598617393875,0.01317848334338329,0.010541742407758438,0.008492613288001888,0.013356601136628456,0.009315182970803984,0.006614003157931455,0.009743359711699696,0.004101245476077177,0.011880251484419804,0.005898466958283593,0.007055483976123433,0.0068718988866095405,0.006201463303413665,0.004973818432163777,0.009411264056348005,0.0025846648623085136
+Validation Accuracy:
+0.9705,0.9836666666666667,0.982,0.9835,0.9776666666666667,0.98,0.9888333333333333,0.9831666666666666,0.9885,0.986,0.984,0.9858333333333333,0.9881666666666666,0.9821666666666666,0.9816666666666667,0.991,0.9838333333333333,0.9873333333333333,0.9868333333333333,0.9898333333333333,0.9868333333333333,0.989,0.988,0.9896666666666667,0.9865,0.9911666666666666,0.9893333333333333,0.9896666666666667,0.9883333333333333,0.9866666666666667
+=> loaded model checkpoint: /userhome/cs2/mingzeng/codes/kmnist/models/ResMLP-24.pkl
+******* begin testing!*********
+Test Averaged Loss = 0.205754
+Test Averaged Accuracy = 0.971000
+Confusion Matrix Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResMLP-24/confusion_matrix.png
+Class:     0      Accuracy = 0.995300    Precision = 0.965787    Recall = 0.988000   f-score = 0.976767
+Class:     1      Accuracy = 0.994200    Precision = 0.986570    Recall = 0.955000   f-score = 0.970528
+Class:     2      Accuracy = 0.991800    Precision = 0.980126    Recall = 0.937000   f-score = 0.958078
+Class:     3      Accuracy = 0.996100    Precision = 0.980020    Recall = 0.981000   f-score = 0.980510
+Class:     4      Accuracy = 0.991200    Precision = 0.957831    Recall = 0.954000   f-score = 0.955912
+Class:     5      Accuracy = 0.995000    Precision = 0.972167    Recall = 0.978000   f-score = 0.975075
+Class:     6      Accuracy = 0.989400    Precision = 0.913889    Recall = 0.987000   f-score = 0.949038
+Class:     7      Accuracy = 0.995600    Precision = 0.988753    Recall = 0.967000   f-score = 0.977755
+Class:     8      Accuracy = 0.996000    Precision = 0.983871    Recall = 0.976000   f-score = 0.979920
+Class:     9      Accuracy = 0.997400    Precision = 0.987000    Recall = 0.987000   f-score = 0.987000

@@ -1,0 +1,178 @@
+********************begin training!********************
+Eopch:     1 train loss = 0.106633
+Eopch:     1 valuation loss = 0.036541, ACC = 0.990000
+ Epoch: 1 model has been already save!
+Training epoch: 1 completed.
+Eopch:     2 train loss = 0.023560
+Eopch:     2 valuation loss = 0.029485, ACC = 0.991833
+ Epoch: 2 model has been already save!
+Training epoch: 2 completed.
+Eopch:     3 train loss = 0.014101
+Eopch:     3 valuation loss = 0.026434, ACC = 0.993167
+ Epoch: 3 model has been already save!
+Training epoch: 3 completed.
+Eopch:     4 train loss = 0.011178
+Eopch:     4 valuation loss = 0.033568, ACC = 0.990500
+Training epoch: 4 completed.
+Eopch:     5 train loss = 0.011963
+Eopch:     5 valuation loss = 0.028671, ACC = 0.993167
+Training epoch: 5 completed.
+Eopch:     6 train loss = 0.008491
+Eopch:     6 valuation loss = 0.021085, ACC = 0.995000
+ Epoch: 6 model has been already save!
+Training epoch: 6 completed.
+Eopch:     7 train loss = 0.008863
+Eopch:     7 valuation loss = 0.023528, ACC = 0.994500
+Training epoch: 7 completed.
+Eopch:     8 train loss = 0.007288
+Eopch:     8 valuation loss = 0.026976, ACC = 0.992500
+Training epoch: 8 completed.
+Eopch:     9 train loss = 0.005660
+Eopch:     9 valuation loss = 0.043079, ACC = 0.987667
+Training epoch: 9 completed.
+Eopch:    10 train loss = 0.005652
+Eopch:    10 valuation loss = 0.032521, ACC = 0.990833
+Training epoch: 10 completed.
+Eopch:    11 train loss = 0.007269
+Eopch:    11 valuation loss = 0.022062, ACC = 0.994167
+Training epoch: 11 completed.
+Eopch:    12 train loss = 0.004372
+Eopch:    12 valuation loss = 0.036558, ACC = 0.992167
+Training epoch: 12 completed.
+Eopch:    13 train loss = 0.005474
+Eopch:    13 valuation loss = 0.023405, ACC = 0.993833
+Training epoch: 13 completed.
+Eopch:    14 train loss = 0.003349
+Eopch:    14 valuation loss = 0.027550, ACC = 0.993833
+Training epoch: 14 completed.
+Eopch:    15 train loss = 0.004899
+Eopch:    15 valuation loss = 0.023654, ACC = 0.994333
+Training epoch: 15 completed.
+Eopch:    16 train loss = 0.003552
+Eopch:    16 valuation loss = 0.022079, ACC = 0.995000
+Training epoch: 16 completed.
+Eopch:    17 train loss = 0.004018
+Eopch:    17 valuation loss = 0.021004, ACC = 0.995167
+ Epoch: 17 model has been already save!
+Training epoch: 17 completed.
+Eopch:    18 train loss = 0.004144
+Eopch:    18 valuation loss = 0.017145, ACC = 0.996500
+ Epoch: 18 model has been already save!
+Training epoch: 18 completed.
+Eopch:    19 train loss = 0.002511
+Eopch:    19 valuation loss = 0.022749, ACC = 0.995167
+Training epoch: 19 completed.
+Eopch:    20 train loss = 0.002511
+Eopch:    20 valuation loss = 0.033824, ACC = 0.992500
+Training epoch: 20 completed.
+Eopch:    21 train loss = 0.005574
+Eopch:    21 valuation loss = 0.018856, ACC = 0.996000
+Training epoch: 21 completed.
+Eopch:    22 train loss = 0.002727
+Eopch:    22 valuation loss = 0.019269, ACC = 0.995167
+Training epoch: 22 completed.
+Eopch:    23 train loss = 0.002617
+Eopch:    23 valuation loss = 0.023354, ACC = 0.995167
+Training epoch: 23 completed.
+Eopch:    24 train loss = 0.002244
+Eopch:    24 valuation loss = 0.018489, ACC = 0.995167
+Training epoch: 24 completed.
+Eopch:    25 train loss = 0.002358
+Eopch:    25 valuation loss = 0.019329, ACC = 0.995000
+Training epoch: 25 completed.
+Eopch:    26 train loss = 0.003287
+Eopch:    26 valuation loss = 0.021972, ACC = 0.995167
+Training epoch: 26 completed.
+Eopch:    27 train loss = 0.004589
+Eopch:    27 valuation loss = 0.024749, ACC = 0.993333
+Training epoch: 27 completed.
+Eopch:    28 train loss = 0.000912
+Eopch:    28 valuation loss = 0.021506, ACC = 0.995500
+Training epoch: 28 completed.
+Eopch:    29 train loss = 0.002646
+Eopch:    29 valuation loss = 0.021657, ACC = 0.995667
+Training epoch: 29 completed.
+Eopch:    30 train loss = 0.001185
+Eopch:    30 valuation loss = 0.027115, ACC = 0.994667
+Training epoch: 30 completed.
+Eopch:    31 train loss = 0.004833
+Eopch:    31 valuation loss = 0.021278, ACC = 0.995333
+Training epoch: 31 completed.
+Eopch:    32 train loss = 0.001897
+Eopch:    32 valuation loss = 0.022322, ACC = 0.994500
+Training epoch: 32 completed.
+Eopch:    33 train loss = 0.003539
+Eopch:    33 valuation loss = 0.018811, ACC = 0.995833
+Training epoch: 33 completed.
+Eopch:    34 train loss = 0.000455
+Eopch:    34 valuation loss = 0.021088, ACC = 0.995833
+Training epoch: 34 completed.
+Eopch:    35 train loss = 0.002819
+Eopch:    35 valuation loss = 0.027828, ACC = 0.993667
+Training epoch: 35 completed.
+Eopch:    36 train loss = 0.002950
+Eopch:    36 valuation loss = 0.022639, ACC = 0.995000
+Training epoch: 36 completed.
+Eopch:    37 train loss = 0.002021
+Eopch:    37 valuation loss = 0.014453, ACC = 0.996500
+Training epoch: 37 completed.
+Eopch:    38 train loss = 0.000929
+Eopch:    38 valuation loss = 0.020020, ACC = 0.996167
+Training epoch: 38 completed.
+Eopch:    39 train loss = 0.003934
+Eopch:    39 valuation loss = 0.021908, ACC = 0.995667
+Training epoch: 39 completed.
+Eopch:    40 train loss = 0.002856
+Eopch:    40 valuation loss = 0.022252, ACC = 0.995333
+Training epoch: 40 completed.
+Eopch:    41 train loss = 0.001765
+Eopch:    41 valuation loss = 0.019979, ACC = 0.995333
+Training epoch: 41 completed.
+Eopch:    42 train loss = 0.002859
+Eopch:    42 valuation loss = 0.019498, ACC = 0.995500
+Training epoch: 42 completed.
+Eopch:    43 train loss = 0.001988
+Eopch:    43 valuation loss = 0.020122, ACC = 0.995833
+Training epoch: 43 completed.
+Eopch:    44 train loss = 0.001906
+Eopch:    44 valuation loss = 0.015427, ACC = 0.996000
+Training epoch: 44 completed.
+Eopch:    45 train loss = 0.000617
+Eopch:    45 valuation loss = 0.023248, ACC = 0.995833
+Training epoch: 45 completed.
+Eopch:    46 train loss = 0.002288
+Eopch:    46 valuation loss = 0.024685, ACC = 0.994333
+Training epoch: 46 completed.
+Eopch:    47 train loss = 0.002961
+Eopch:    47 valuation loss = 0.029439, ACC = 0.994000
+Training epoch: 47 completed.
+Eopch:    48 train loss = 0.002208
+Eopch:    48 valuation loss = 0.027046, ACC = 0.994833
+Training epoch: 48 completed.
+Eopch:    49 train loss = 0.000916
+Eopch:    49 valuation loss = 0.020738, ACC = 0.996000
+Training epoch: 49 completed.
+Eopch:    50 train loss = 0.000336
+Eopch:    50 valuation loss = 0.021995, ACC = 0.994667
+Training epoch: 50 completed.
+Train Loss Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResNet-34/train_loss.png
+Validation Accuracy Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResNet-34/val_acc.png
+Train Loss:
+0.10663288501016818,0.023560329713782524,0.014101241604837157,0.011177892464259832,0.011962616963440859,0.008491031523219514,0.008862906449553844,0.0072877223670445536,0.005659631196351981,0.0056515910035211045,0.007268956035215386,0.004371746765634369,0.005474027861992732,0.0033488901729209165,0.00489867321382667,0.0035519160211847887,0.0040176142923510315,0.0041439567963489805,0.0025106570646627733,0.0025113279428380718,0.005573548964850264,0.0027273199622795284,0.0026173889789269113,0.0022438014260685135,0.002357653659443726,0.003287135360845659,0.0045886932596953065,0.0009121494066920027,0.002645777721855446,0.001184784014578749,0.004833152677004954,0.0018972325255269696,0.0035389326350548506,0.00045536609219931846,0.002819422161926344,0.00295049640826091,0.0020209123628466595,0.0009293903282567419,0.003933526405523504,0.0028557769325891352,0.001764970838518952,0.0028587067907089748,0.001987672652010898,0.0019058688251576848,0.0006169046146797123,0.0022881885661847966,0.0029608939319989026,0.0022084624991614947,0.0009156058300263428,0.0003358277108293135
+Validation Accuracy:
+0.99,0.9918333333333333,0.9931666666666666,0.9905,0.9931666666666666,0.995,0.9945,0.9925,0.9876666666666667,0.9908333333333333,0.9941666666666666,0.9921666666666666,0.9938333333333333,0.9938333333333333,0.9943333333333333,0.995,0.9951666666666666,0.9965,0.9951666666666666,0.9925,0.996,0.9951666666666666,0.9951666666666666,0.9951666666666666,0.995,0.9951666666666666,0.9933333333333333,0.9955,0.9956666666666667,0.9946666666666667,0.9953333333333333,0.9945,0.9958333333333333,0.9958333333333333,0.9936666666666667,0.995,0.9965,0.9961666666666666,0.9956666666666667,0.9953333333333333,0.9953333333333333,0.9955,0.9958333333333333,0.996,0.9958333333333333,0.9943333333333333,0.994,0.9948333333333333,0.996,0.9946666666666667
+=> loaded model checkpoint: /userhome/cs2/mingzeng/codes/kmnist/models/ResNet-34.pkl
+******* begin testing!*********
+Test Averaged Loss = 0.070697
+Test Averaged Accuracy = 0.986100
+Confusion Matrix Visualization is saved to /userhome/cs2/mingzeng/codes/kmnist/log/ResNet-34/confusion_matrix.png
+Class:     0      Accuracy = 0.995800    Precision = 0.965953    Recall = 0.993000   f-score = 0.979290
+Class:     1      Accuracy = 0.998000    Precision = 0.994949    Recall = 0.985000   f-score = 0.989950
+Class:     2      Accuracy = 0.994100    Precision = 0.972864    Recall = 0.968000   f-score = 0.970426
+Class:     3      Accuracy = 0.998000    Precision = 0.984190    Recall = 0.996000   f-score = 0.990060
+Class:     4      Accuracy = 0.995000    Precision = 0.985685    Recall = 0.964000   f-score = 0.974722
+Class:     5      Accuracy = 0.996700    Precision = 0.993871    Recall = 0.973000   f-score = 0.983325
+Class:     6      Accuracy = 0.997700    Precision = 0.983185    Recall = 0.994000   f-score = 0.988563
+Class:     7      Accuracy = 0.999100    Precision = 0.994018    Recall = 0.997000   f-score = 0.995507
+Class:     8      Accuracy = 0.998800    Precision = 0.992032    Recall = 0.996000   f-score = 0.994012
+Class:     9      Accuracy = 0.999000    Precision = 0.995000    Recall = 0.995000   f-score = 0.995000
