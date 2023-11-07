@@ -95,8 +95,8 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |PreActResNet-18 + Input Mixup    |99.54% | 98.41%\* |97.04%\*|
 |PreActResNet-18 + Manifold Mixup |99.54% | 98.83%\* | 97.33%\* |
 |[ResNet18 + VGG Ensemble](https://github.com/ranihorev/Kuzushiji_MNIST) | 99.60% | 98.90%\* | | [Rani Horev](https://twitter.com/HorevRani)
-|[DenseNet-100 (k=12)](https://github.com/kurapan/pytorch_image_classification) | | | 97.32% | [Jan Zdenek](https://github.com/kurapan)
-|[Shake-Shake-26 2x96d (cutout 14)](https://github.com/kurapan/pytorch_image_classification) | | | **98.29%** | [Jan Zdenek](https://github.com/kurapan)
+|[DenseNet-100 (k=12)](https://github.com/janzd/pytorch_image_classification) | | | 97.32% | [Jan Zdenek](https://github.com/janzd)
+|[Shake-Shake-26 2x96d (cutout 14)](https://github.com/janzd/pytorch_image_classification) | | | **98.29%** | [Jan Zdenek](https://github.com/janzd)
 |[shake-shake-26 2x96d (S-S-I), Cutout 14](https://github.com/hysts/pytorch_image_classification#results-on-kuzushiji-mnist) | **99.76%** | **99.34%\*** | | [hysts](https://github.com/hysts)
 
 _\* These results were obtained using an old version of the dataset, which gave slightly lower performance numbers_
