@@ -15,6 +15,7 @@ epochs = 12
 # input image dimensions
 img_rows, img_cols = 28, 28
 
+
 def load(f):
     return np.load(f)['arr_0']
 
