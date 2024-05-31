@@ -12,7 +12,7 @@
 
 **Kuzushiji-49**, as the name suggests, has 49 classes (28x28 grayscale, 270,912 images), is a much larger, but imbalanced dataset containing 48 Hiragana characters and one Hiragana iteration mark.
 
-**Kuzushiji-Kanji** is an imbalanced dataset of total 3832 Kanji characters (64x64 grayscale, 140,426 images), ranging from 1,766 examples to only a single example per class.
+**Kuzushiji-Kanji** is an imbalanced dataset with a total of 3,832 Kanji characters (64x64 grayscale, 140,424 images), ranging from 1,766 examples to only a single example per class.
 
 <p align="center">
   <img src="images/kmnist_examples.png">
@@ -74,7 +74,7 @@ accs = np.mean(accs) # Final balanced accuracy
 
 ### Kuzushiji-Kanji
 
-Kuzushiji-Kanji is a large and highly imbalanced 64x64 dataset of 3832 Kanji characters, containing 140,426 images of both common and rare characters.  
+Kuzushiji-Kanji is a large and highly imbalanced 64x64 dataset of 3,832 Kanji characters, containing 140,424 images of both common and rare characters.  
 
 The full dataset is available for download [here](http://codh.rois.ac.jp/kmnist/dataset/kkanji/kkanji.tar) (310MB).  
 We plan to release a train/test split version as a low-shot learning dataset very soon.
