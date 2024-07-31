@@ -23,6 +23,49 @@
 
 🌟 You can run [`python download_data.py`](download_data.py) to interactively select and download any of these datasets!
 
+## How to get the data and use with Hub 💾
+A simple way of using this dataset is with [Activeloop](https://activeloop.ai)'s python package [Hub](https://github.com/activeloopai/Hub)!
+
+First, run `pip install hub` (or `pip3 install hub`). 
+
+```python
+# Load kmnist-training set in python
+import hub
+ds = hub.load("hub://activeloop/kmnist-train")
+
+# Load kmnist-test set in python
+#ds = hub.load("hub://activeloop/kmnist-test")
+
+
+
+# Checking out the first number and his label
+import matplotlib.pyplot as plt
+img = ds.images[0].numpy() 
+plt.imshow(img)
+plt.title(f"{ds.labels[0].numpy(aslist=True)}")
+plt.show()
+
+# train a model in pytorch
+for sample in ds.pytorch():
+    # ... model code here ...
+
+# train a model in tensorflow
+for sample in ds.tensorflow():
+    # ... model code here ...
+```
+
+available tensors can be shown by printing dataset:
+
+```python
+print(ds)
+# prints: Dataset(path='hub://activeloop/kmnist-train', read_only=True, tensors=['images', 'labels'])
+```
+
+For more information, check out the [hub documentation](https://docs.activeloop.ai/).
+
+
+
+
 ### Kuzushiji-MNIST
 
 Kuzushiji-MNIST contains 70,000 28x28 grayscale images spanning 10 classes (one from each column of [hiragana](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/768px-Table_hiragana.svg.png)), and is perfectly balanced like the original MNIST dataset (6k/1k train/test for each class).
