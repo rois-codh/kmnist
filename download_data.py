@@ -16,21 +16,21 @@ download_dict = {
     '1) Kuzushiji-MNIST (10 classes, 28x28, 70k examples)': {
         '1) MNIST data format (ubyte.gz)':
             ['http://codh.rois.ac.jp/kmnist/dataset/kmnist/train-images-idx3-ubyte.gz',
-            'http://codh.rois.ac.jp/kmnist/dataset/kmnist/train-labels-idx1-ubyte.gz',
-            'http://codh.rois.ac.jp/kmnist/dataset/kmnist/t10k-images-idx3-ubyte.gz',
-            'http://codh.rois.ac.jp/kmnist/dataset/kmnist/t10k-labels-idx1-ubyte.gz'],
+             'http://codh.rois.ac.jp/kmnist/dataset/kmnist/train-labels-idx1-ubyte.gz',
+             'http://codh.rois.ac.jp/kmnist/dataset/kmnist/t10k-images-idx3-ubyte.gz',
+             'http://codh.rois.ac.jp/kmnist/dataset/kmnist/t10k-labels-idx1-ubyte.gz'],
         '2) NumPy data format (.npz)':
             ['http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-train-imgs.npz',
-            'http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-train-labels.npz',
-            'http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-imgs.npz',
-            'http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-labels.npz'],
+             'http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-train-labels.npz',
+             'http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-imgs.npz',
+             'http://codh.rois.ac.jp/kmnist/dataset/kmnist/kmnist-test-labels.npz'],
     },
     '2) Kuzushiji-49 (49 classes, 28x28, 270k examples)': {
         '1) NumPy data format (.npz)':
             ['http://codh.rois.ac.jp/kmnist/dataset/k49/k49-train-imgs.npz',
-            'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-train-labels.npz',
-            'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-imgs.npz',
-            'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-labels.npz'],
+             'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-train-labels.npz',
+             'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-imgs.npz',
+             'http://codh.rois.ac.jp/kmnist/dataset/k49/k49-test-labels.npz'],
     },
     '3) Kuzushiji-Kanji (3832 classes, 64x64, 140k examples)': {
         '1) Folders of images (.tar)':
@@ -38,6 +38,7 @@ download_dict = {
     }
 
 }
+
 
 # Download a list of files
 def download_list(url_list):
@@ -52,6 +53,7 @@ def download_list(url_list):
                 if chunk:
                     f.write(chunk)
     print('All dataset files downloaded!')
+
 
 # Ask the user about which path to take down the dict
 def traverse_dict(d):
